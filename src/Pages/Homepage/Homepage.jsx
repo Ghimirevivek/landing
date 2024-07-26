@@ -4,6 +4,7 @@ import Hero from '../../components/Homepage/Hero';
 import Banner from '../../components/Homepage/Banner';
 import Footer from '../../components/Homepage/Footer';
 import TabsElement from '../../components/Homepage/TabsElement';
+import BottomSection from '../../components/Homepage/BottomSection';
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
         <Hero />
         <Banner />
         <TabsElement />
+        <BottomSection />
         <Footer />
       </div>
     </div>
