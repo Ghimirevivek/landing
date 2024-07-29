@@ -34,7 +34,7 @@ const BottomSection = () => {
             type='text'
             className='border h-[50px] border-gray-300 max-w-[11rem]  px-4 py-[8px] outline-none text-gray-600 flex items-center justify-center'
           />
-          <button className='bg-[#4B5563] h-[50px] text-white border-none outline-none rounded-none rounded-r-lg py-2'>
+          <button className='bg-[#4B5563] h-[50px] text-white border-none outline-none rounded-none rounded-r-lg p-2'>
             Join Us
           </button>
         </div>

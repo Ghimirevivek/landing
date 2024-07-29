@@ -1,11 +1,11 @@
 import React from 'react';
-import banner from '../../Assets/Subtract.png';
+
 import gifimg from '../../Assets/logogif.gif';
 import './Hero.css';
 import video from '../../Assets/herobanner.mp4';
 
 const Hero = () => {
-  console.log(video);
+  // console.log(video);
   return (
     <div
       style={{
@@ -49,14 +49,19 @@ const Hero = () => {
               type='text'
               className='border h-[50px] border-gray-300 max-w-[11rem]  px-4 py-[8px] outline-none text-gray-600 flex items-center justify-center'
             />
-            <button className='bg-[#4B5563] h-[50px] text-white border-none outline-none rounded-none rounded-r-lg py-2'>
+            <button className='bg-[#4B5563] h-[50px] px-2 text-white border-none outline-none rounded-none rounded-r-lg py-2'>
               Join Us
             </button>
           </div>
         </div>
       </div>
       <div className='flex flex-col items-center justify-center w-[50%] relative'>
-        <video loop autoPlay muted className={`w-[92%] rounded-2xl mr-auto`}>
+        <video
+          loop
+          autoPlay
+          muted
+          className={`w-[92%] rounded-2xl mr-auto h-[400px] object-fill`}
+        >
           <source src={video} type='video/mp4' />
           Your browser does not support the video tag.
         </video>

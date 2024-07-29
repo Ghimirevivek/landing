@@ -13,13 +13,14 @@ import carousel1 from '../../Assets/carousel1.png';
 import carousel2 from '../../Assets/carousel2.png';
 import carousel3 from '../../Assets/carousel3.png';
 import carousel4 from '../../Assets/carousel4.png';
-import carousel5 from '../../Assets/carousel1.png';
 import carousel6 from '../../Assets/carousel5.png';
 import carousel7 from '../../Assets/carousel6.png';
 export function CarouselTransition1() {
   return (
     <Carousel
       transition={{ duration: 1 }}
+      autoplay={true}
+      loop={true}
       className='rounded-xl bg-no-repeat scrollbar-hide'
       prevArrow={({ handlePrev }) => (
         <IconButton
@@ -154,6 +155,8 @@ export function CarouselTransition2() {
   return (
     <Carousel
       transition={{ duration: 1 }}
+      autoplay={true}
+      loop={true}
       className='rounded-xl bg-no-repeat scrollbar-hide'
       prevArrow={({ handlePrev }) => (
         <IconButton

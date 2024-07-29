@@ -38,19 +38,19 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full px-6 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 2xl:px-6 px-4 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
             <span>Home</span>
           </div>
-          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full px-6 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 2xl:px-6 px-4 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
             <span>About Us</span>
           </div>
-          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full px-6 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 2xl:px-6 px-4 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
             <span>How It Works</span>
           </div>
-          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full px-6 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 2xl:px-6 px-4 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
             <span>Contact Us</span>
           </div>
-          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full px-6 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 2xl:px-6 px-4 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
             <span>FAQ</span>
           </div>
         </div>
@@ -74,13 +74,13 @@ const Header = () => {
           <div className='flex items-center justify-center gap-4 '>
             {' '}
             {/* <a href='/' className='rainbow-button rounded-lg' alt='Log In'></a> */}{' '}
-            <button className='font-semibold  bg-black text-white rounded-lg text-[15px]'>
+            <button className='font-semibold  bg-black text-white rounded-lg text-[15px] mybutton'>
               {' '}
               Log In
             </button>
             <button
               size='sm'
-              className='font-semibold  bg-black text-white rounded-lg flex items-center justify-center gap-1 text-[15px] '
+              className='font-semibold  bg-black text-white rounded-lg flex items-center justify-center gap-1 text-[15px] mybutton'
             >
               <FaUserPlus /> Sign Up
             </button>

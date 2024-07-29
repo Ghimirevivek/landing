@@ -8,6 +8,12 @@ import insta from '../../Assets/insta.png';
 import youtube from '../../Assets/youtube.png';
 import facebook from '../../Assets/facebook.png';
 import twitch from '../../Assets/twitch.png';
+import tiktok from '../../Assets/tiktok.png';
+import reddit from '../../Assets/reddit.png';
+import wechat from '../../Assets/wechat.png';
+import discord from '../../Assets/discord.png';
+import twitter from '../../Assets/twitter.png';
+import threads from '../../Assets/threads.png';
 import HeaderSvg from '../../Assets/header-gradient2.svg';
 import {
   FaDiscord,
@@ -181,9 +187,10 @@ const Footer = () => {
                     size={24}
                     className='text-gray-600 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
                   />
-                  <IoLogoTiktok
-                    size={24}
-                    className='text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
+                  <img
+                    src={tiktok}
+                    alt='tiktok'
+                    className='w-[1.60rem] text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-[2.35rem] transition-all ease-in-out delay-50 duration-300 transform'
                   />
                 </a>
                 <a
@@ -236,9 +243,10 @@ const Footer = () => {
                     size={24}
                     className='text-gray-600 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
                   />
-                  <FaFacebook
-                    size={24}
-                    className='text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
+                  <img
+                    src={reddit}
+                    alt='reddit'
+                    className='w-[1.60rem] text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-[2.55rem] transition-all ease-in-out delay-50 duration-300 transform'
                   />
                 </a>
                 <a
@@ -249,9 +257,10 @@ const Footer = () => {
                     size={24}
                     className='text-gray-600 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
                   />
-                  <FaFacebook
-                    size={24}
-                    className='text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
+                  <img
+                    src={wechat}
+                    alt='wechat'
+                    className='w-[1.60rem] text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-[2.55rem] transition-all ease-in-out delay-50 duration-300 transform'
                   />
                 </a>
                 <a
@@ -262,9 +271,10 @@ const Footer = () => {
                     size={24}
                     className='text-gray-600 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
                   />
-                  <FaFacebook
-                    size={24}
-                    className='text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
+                  <img
+                    src={discord}
+                    alt='discord'
+                    className='w-[1.60rem] text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-[2.55rem] transition-all ease-in-out delay-50 duration-300 transform'
                   />
                 </a>
                 <a
@@ -275,9 +285,10 @@ const Footer = () => {
                     size={24}
                     className='text-gray-600 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
                   />
-                  <FaFacebook
-                    size={24}
-                    className='text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
+                  <img
+                    src={twitter}
+                    alt='twitter'
+                    className='w-[1.50rem] text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-[2.55rem] transition-all ease-in-out delay-50 duration-300 transform'
                   />
                 </a>
                 <a
@@ -288,9 +299,10 @@ const Footer = () => {
                     size={24}
                     className='text-gray-600 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
                   />
-                  <FaFacebook
-                    size={24}
-                    className='text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-10 transition-all ease-in-out delay-50 duration-300 transform'
+                  <img
+                    src={threads}
+                    alt='threads'
+                    className='w-[1.60rem] text-[#1877F2] absolute -bottom-8 group-hover:-translate-y-[2.35rem] transition-all ease-in-out delay-50 duration-300 transform'
                   />
                 </a>
               </div>
