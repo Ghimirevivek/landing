@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Tabs,
   TabsHeader,
@@ -8,9 +8,15 @@ import {
   IconButton,
 } from '@material-tailwind/react';
 import { Carousel } from '@material-tailwind/react';
-import HeaderSvg from '../../Assets/header-gradient3.svg';
+
 import carousel1 from '../../Assets/carousel1.png';
-export function CarouselTransition() {
+import carousel2 from '../../Assets/carousel2.png';
+import carousel3 from '../../Assets/carousel3.png';
+import carousel4 from '../../Assets/carousel4.png';
+import carousel5 from '../../Assets/carousel1.png';
+import carousel6 from '../../Assets/carousel5.png';
+import carousel7 from '../../Assets/carousel6.png';
+export function CarouselTransition1() {
   return (
     <Carousel
       transition={{ duration: 1 }}
@@ -78,7 +84,7 @@ export function CarouselTransition() {
         <img
           src={carousel1}
           alt='logo'
-          className='cursor-pointer absolute left-0 object-cover bg-no-repeat  w-full h-[40rem]'
+          className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
         />
         {/* <div className='flex items-center justify-between h-full px-20'>
           <div className='text-[40px] leading-tight flex flex-col items-start justify-start'>
@@ -127,19 +133,107 @@ export function CarouselTransition() {
         </div> */}
       </div>
       <img
-        src='https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80'
-        alt='image2'
-        className='h-[40rem] w-full object-cover'
+        src={carousel2}
+        alt='logo'
+        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
       />
       <img
-        src='https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80'
-        alt='image3'
-        className='h-[40rem] w-full object-cover'
+        src={carousel3}
+        alt='logo'
+        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+      />
+      <img
+        src={carousel4}
+        alt='logo'
+        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
       />
     </Carousel>
   );
 }
-
+export function CarouselTransition2() {
+  return (
+    <Carousel
+      transition={{ duration: 1 }}
+      className='rounded-xl bg-no-repeat scrollbar-hide'
+      prevArrow={({ handlePrev }) => (
+        <IconButton
+          variant='text'
+          color='gray'
+          size='lg'
+          onClick={handlePrev}
+          className='!absolute top-2/4 left-4 -translate-y-2/4'
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={2}
+            stroke='currentColor'
+            className='h-6 w-6'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+            />
+          </svg>
+        </IconButton>
+      )}
+      nextArrow={({ handleNext }) => (
+        <IconButton
+          variant='text'
+          color='gray'
+          size='lg'
+          onClick={handleNext}
+          className='!absolute top-2/4 !right-4 -translate-y-2/4'
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={2}
+            stroke='currentColor'
+            className='h-6 w-6'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
+            />
+          </svg>
+        </IconButton>
+      )}
+    >
+      <div
+        style={{
+          borderRadius: '15px',
+          // boxShadow:
+          //   'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+          backdropFilter: 'blur(5px)',
+          WebkitBackdropFilter: 'blur(5px)',
+          // border: '2px solid rgba(233,233,232,0.1)',
+        }}
+        className='relative w-full h-[40rem] '
+      >
+        <img
+          src={carousel1}
+          alt='logo'
+          className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+        />
+      </div>
+      <img
+        src={carousel6}
+        alt='logo'
+        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+      />
+      <img
+        src={carousel7}
+        alt='logo'
+        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+      />
+    </Carousel>
+  );
+}
 const CreatorContent = () => (
   <div className='flex flex-col items-center justify-center'>
     <p className='my-10  max-w-[65rem]'>
@@ -150,7 +244,7 @@ const CreatorContent = () => (
       alerts for gifts and contributions. Our platform ensures that your
       personal information is protected.
     </p>
-    <CarouselTransition />
+    <CarouselTransition1 />
   </div>
 );
 
@@ -164,11 +258,17 @@ const UserContent = () => (
       interactive profiles to secure one-click payments, our platform ensures a
       personalized experience tailored to user preferences.
     </p>
-    <CarouselTransition />
+    <CarouselTransition2 />
   </div>
 );
 
 const TabsElement = () => {
+  const [activeTab, setActiveTab] = useState('react');
+
+  const handleTabChange = (value) => {
+    setActiveTab(value);
+  };
+
   const data = [
     {
       label: 'Creator',
@@ -189,6 +289,7 @@ const TabsElement = () => {
       <Tabs
         // id='custom-animation'
         value='react'
+        onChange={(e, value) => handleTabChange(value)}
         style={{
           all: 'unset',
           display: 'flex',
@@ -216,14 +317,26 @@ const TabsElement = () => {
             cursor: 'pointer',
             transition: 'background-color 0.3s ease',
           }}
+          indicatorProps={{
+            className: 'bg-transparent shadow-none rounded-full',
+          }}
         >
           {data.map(({ label, value }) => (
             <Tab
               style={{
                 minHeight: '2.6rem',
+                // all: 'unset',
+                background: activeTab === value ? '' : 'bg-[#FBFBFF]',
+                color: activeTab === value ? 'black' : '#616161',
+                padding: '0.5rem 1rem',
               }}
               key={value}
               value={value}
+              // className={activeTab === value ? 'text-gray-900' : ''}
+              className={`font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center rounded-full px-6 py-2 transition-all ease-in delay-100 duration-300 cursor-pointer ${
+                activeTab === value ? 'my-shadow' : ''
+              } `}
+              onClick={() => handleTabChange(value)}
             >
               {label}
             </Tab>

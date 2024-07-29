@@ -92,6 +92,10 @@ const Header = () => {
           box-shadow: rgba(17, 17, 26, 0.3) 0px -4px 6px 0px inset,
             rgba(17, 17, 26, 0.05) 0px 4px 32px 0px;
         }
+        .my-shadow {
+          box-shadow: rgba(17, 17, 26, 0.3) 0px -4px 6px 0px inset,
+            rgba(17, 17, 26, 0.05) 0px 4px 32px 0px;
+        }
       `}</style>
     </div>
   );
