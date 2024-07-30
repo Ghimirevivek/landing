@@ -5,6 +5,7 @@ import Banner from '../../components/Homepage/Banner';
 import Footer from '../../components/Homepage/Footer';
 import TabsElement from '../../components/Homepage/TabsElement';
 import BottomSection from '../../components/Homepage/BottomSection';
+import VideoBanner from '../../components/Homepage/VideoBanner';
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
         <Hero />
         <Banner />
         <TabsElement />
+        <VideoBanner />
         <BottomSection />
         <Footer />
       </div>

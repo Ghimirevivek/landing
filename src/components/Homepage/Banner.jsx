@@ -7,13 +7,20 @@ import {
   Typography,
 } from '@material-tailwind/react';
 import img1 from '../../Assets/Frame 249.png';
-import imggif from '../../Assets/imggif.gif';
+import imggif from '../../Assets/imagegif.gif';
 import twitch from '../../Assets/twitch2.png';
+import youtube from '../../Assets/youtube.png';
 import insta from '../../Assets/insta.png';
+import twitter from '../../Assets/twitter.png';
+import twitter2 from '../../Assets/logos/twitter.png';
 import ytgaming from '../../Assets/ytgaming.png';
+import ytgaming2 from '../../Assets/logos/ytgaming.png';
 import snapchat from '../../Assets/snapchat.png';
-import { FaSnapchat } from 'react-icons/fa';
-import { BsSnapchat } from 'react-icons/bs';
+import snapchat2 from '../../Assets/logos/snapchat.png';
+import facebook from '../../Assets/facebook.png';
+import tiktok from '../../Assets/tiktok.png';
+import tiktok2 from '../../Assets/logos/tiktok.png';
+import BoxComponent from './BoxComponent';
 export function CardDefault() {
   return (
     <Card
@@ -77,7 +84,20 @@ export function CardDefault2() {
   );
 }
 const Banner = () => {
-  const array = Array(12).fill({ image: insta });
+  const array = [
+    { image1: insta, image2: '', text: 'Instagram' },
+    { image1: twitter, image2: twitter2, text: 'Twitter' },
+    { image1: twitch, image2: '', text: 'Twitch' },
+    { image1: '', image2: '', text: '' },
+    { image1: '', image2: '', text: '' },
+    { image1: youtube, image2: '', text: 'Youtube' },
+    { image1: tiktok, image2: tiktok2, text: 'Tiktok' },
+    { image1: ytgaming, image2: ytgaming2, text: 'YT Gaming' },
+    { image1: '', image2: '', text: '' },
+    { image1: snapchat, image2: snapchat2, text: 'Snapchat' },
+    { image1: facebook, image2: '', text: 'Facebook' },
+    { image1: '', image2: '', text: '' },
+  ];
 
   console.log(array);
   return (
@@ -97,23 +117,12 @@ const Banner = () => {
       <div className='flex items-center justify-between w-full'>
         <div className='grid grid-cols-4'>
           {array.map((item, index) => (
-            <div
-              style={{
-                boxShadow: 'rgba(0, 0, 0, 0.20) 1px 1px 40px 0px inset',
-              }}
+            <BoxComponent
               key={index}
-              className='w-[120px] h-[120px] border hover-shadow flex items-center justify-center group transition-all delay-100 duration-300 ease-in-out'
-            >
-              <img
-                src={snapchat}
-                alt='cardimage'
-                className='w-12 hidden group-hover:block'
-              />
-              <BsSnapchat
-                size={35}
-                className='text-gray-700 group-hover:hidden'
-              />
-            </div>
+              image1={item.image1}
+              image2={item.image2}
+              text={item.text}
+            />
           ))}
         </div>
 

@@ -248,6 +248,33 @@ const CreatorContent = () => (
       personal information is protected.
     </p>
     <CarouselTransition1 />
+    <div className='grid grid-cols-1 md:grid-cols-2 w-full my-10'>
+      <div
+        style={{
+          background: 'rgba(255, 255, 255, 0.2)',
+          borderRadius: '20px',
+          boxShadow:
+            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+          backdropFilter: 'blur(5px)',
+          WebkitBackdropFilter: 'blur(5px)',
+          border: '2px solid rgba(233,233,232,0.3)',
+        }}
+        className='max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
+      >
+        <div className='text-[32px] leading-relaxed text-black ubuntu'>
+          <span className='italic font-normal'>Live</span>
+          <span className='font-bold mx-2  '>Streaming</span>
+        </div>
+        <p className=' max-w-[40rem] text-[20px] inter'>
+          Dive into dynamic live streaming on CreatorsHub with seamless Twitch
+          integration. Engage fans in real-time, receive gift alerts, and
+          enhance your streaming profile.
+        </p>
+      </div>
+      <div className='w-full'>gg</div>
+      <div className='w-full'>gg</div>
+      <div className='w-full'>gg</div>
+    </div>
   </div>
 );
 
