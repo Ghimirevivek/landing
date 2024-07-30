@@ -7,8 +7,9 @@ import {
   TabPanel,
   IconButton,
 } from '@material-tailwind/react';
+import gradient from '../../Assets/gradient/gradient1.png';
 import { Carousel } from '@material-tailwind/react';
-
+import gifimg from '../../Assets/creator1img1.gif';
 import carousel1 from '../../Assets/carousel1.png';
 import carousel2 from '../../Assets/carousel2.png';
 import carousel3 from '../../Assets/carousel3.png';
@@ -248,7 +249,7 @@ const CreatorContent = () => (
       personal information is protected.
     </p>
     <CarouselTransition1 />
-    <div className='grid grid-cols-1 md:grid-cols-2 w-full my-10'>
+    <div className='grid grid-cols-1 md:grid-cols-2 w-full my-10 gap-y-4'>
       <div
         style={{
           background: 'rgba(255, 255, 255, 0.2)',
@@ -259,8 +260,13 @@ const CreatorContent = () => (
           WebkitBackdropFilter: 'blur(5px)',
           border: '2px solid rgba(233,233,232,0.3)',
         }}
-        className='max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
+        className='max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group relative'
       >
+        <img
+          src={gradient}
+          alt='gradient'
+          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
+        />
         <div className='text-[32px] leading-relaxed text-black ubuntu'>
           <span className='italic font-normal'>Live</span>
           <span className='font-bold mx-2  '>Streaming</span>
@@ -270,10 +276,119 @@ const CreatorContent = () => (
           integration. Engage fans in real-time, receive gift alerts, and
           enhance your streaming profile.
         </p>
+        <div className='min-h-[226px]'>
+          {' '}
+          <img
+            src={gifimg}
+            alt='cardimage'
+            className='w-full h-[15rem] rounded-2xl object-fill'
+          />
+        </div>
       </div>
-      <div className='w-full'>gg</div>
-      <div className='w-full'>gg</div>
-      <div className='w-full'>gg</div>
+      <div
+        style={{
+          background: 'rgba(255, 255, 255, 0.2)',
+          borderRadius: '20px',
+          boxShadow:
+            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+          backdropFilter: 'blur(5px)',
+          WebkitBackdropFilter: 'blur(5px)',
+          border: '2px solid rgba(233,233,232,0.3)',
+        }}
+        className='relative max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
+      >
+        <img
+          src={gradient}
+          alt='gradient'
+          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
+        />
+        <div className='text-[32px] leading-relaxed text-black ubuntu'>
+          {/* <span className='italic font-normal'>Live</span> */}
+          <span className='font-bold mx-2'>Wishlists</span>
+        </div>
+        <p className=' max-w-[40rem] text-[20px] inter'>
+          Upload wishlists with products, cash tips, crowdfunding goals, or
+          small gifts. Receive support directly from your fans.
+        </p>
+        <div className='min-h-[226px]'>
+          {' '}
+          <img
+            src={gifimg}
+            alt='cardimage'
+            className='w-full h-[15rem] rounded-2xl object-fill'
+          />
+        </div>
+      </div>
+      <div
+        style={{
+          background: 'rgba(255, 255, 255, 0.2)',
+          borderRadius: '20px',
+          boxShadow:
+            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+          backdropFilter: 'blur(5px)',
+          WebkitBackdropFilter: 'blur(5px)',
+          border: '2px solid rgba(233,233,232,0.3)',
+        }}
+        className='relative max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
+      >
+        <img
+          src={gradient}
+          alt='gradient'
+          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
+        />
+        <div className='text-[32px] leading-relaxed text-black ubuntu'>
+          <span className='italic font-normal'>Access to real-time</span>
+          <span className='font-bold mx-2  '>notifications</span>
+        </div>
+        <p className=' max-w-[40rem] text-[20px] inter'>
+          Get real-time gift alerts from your fans—crowdfunding, cash gifts,
+          tips, and wishlist items included. Stay connected and appreciated with
+          instant notifications.
+        </p>
+        <div className='min-h-[226px]'>
+          {' '}
+          <img
+            src={gifimg}
+            alt='cardimage'
+            className='w-full h-[15rem] rounded-2xl object-fill'
+          />
+        </div>
+      </div>
+      <div
+        style={{
+          background: 'rgba(255, 255, 255, 0.2)',
+          borderRadius: '20px',
+          boxShadow:
+            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+          backdropFilter: 'blur(5px)',
+          WebkitBackdropFilter: 'blur(5px)',
+          border: '2px solid rgba(233,233,232,0.3)',
+        }}
+        className='relative max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
+      >
+        <img
+          src={gradient}
+          alt='gradient'
+          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
+        />
+        <div className='text-[32px] leading-relaxed text-black ubuntu'>
+          <span className='font-bold mx-2  '>Pay</span>
+          <span className='italic font-normal'>Per View</span>
+        </div>
+        <p className=' max-w-[40rem] text-[20px] inter'>
+          Monetize your best work with exclusive pay-per-video and premium
+          content options. Engage your audience with unique features and
+          insights, enhancing viewer satisfaction.
+        </p>
+        <div className='min-h-[226px]'>
+          {' '}
+          <img
+            src={gifimg}
+            alt='cardimage'
+            className='w-full h-[15rem] rounded-2xl object-fill'
+          />
+        </div>
+      </div>
     </div>
   </div>
 );
