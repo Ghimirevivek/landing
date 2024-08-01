@@ -28,7 +28,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <footer class=' w-full pr-2 pl-4 lg:pb-10 relative '>
-      {/* <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' /> */}
+      <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' />
       <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center '>
         <div
           style={{
@@ -158,7 +158,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class='mr-auto pl-6 2xl:pl-0 flex flex-col justify-center items-start 2xl:mt-[5.5rem]'>
+            <div class='mr-auto pl-5 2xl:pl-0 flex flex-col justify-center items-start 2xl:mt-[5.5rem]'>
               <span className=' text text-[20px] mb-2'>Follow Us</span>
               <div className='flex flex-wrap items-center justify-start gap-3 lg:grid grid-cols-5 lg:gap-x-3 lg:gap-y-3 lg:mr-[2rem] w-full'>
                 <a
