@@ -240,7 +240,7 @@ export function CarouselTransition2() {
 }
 const CreatorContent = () => (
   <div className='flex flex-col items-center justify-center'>
-    <p className='my-10  max-w-[65rem]'>
+    <p className=' my-10  max-w-[65rem]'>
       Empower your creative journey on CreatorsHub with intuitive tools designed
       for creators. Why Join CreatorsHub? As a creator, showcase your talents
       through live streaming, upload features, and wishlists. Engage with your
@@ -375,7 +375,7 @@ const CreatorContent = () => (
           <span className='font-bold mx-2  '>Pay</span>
           <span className='italic font-normal'>Per View</span>
         </div>
-        <p className=' max-w-[40rem] text-[20px] inter'>
+        <p className='  lg:max-w-[40rem] text-[20px] inter'>
           Monetize your best work with exclusive pay-per-video and premium
           content options. Engage your audience with unique features and
           insights, enhancing viewer satisfaction.
@@ -395,7 +395,7 @@ const CreatorContent = () => (
 
 const UserContent = () => (
   <div className='flex flex-col items-center justify-center'>
-    <p className='my-10 max-w-[65rem]'>
+    <p className='my-10  lg:max-w-[65rem]'>
       Explore the user-centric functionalities of CreatorsHub, where members can
       easily browse, discover, and support their favorite creators. CreatorsHub
       offers a secure platform where you can send gifts and contributions

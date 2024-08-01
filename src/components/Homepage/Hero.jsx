@@ -17,9 +17,9 @@ const Hero = () => {
         WebkitBackdropFilter: 'blur(5px)',
         border: '2px solid rgba(233,233,232,0.3)',
       }}
-      className='py-16 px-4 w-[95%] mx-auto rounded-lg flex items-center justify-between mb-10'
+      className='py-16 xl:px-4 w-[95%] mx-auto rounded-lg flex items-center justify-between mb-10 flex-col lg:flex-row gap-4 overflow-clip'
     >
-      <div className='w-[50%] '>
+      <div className='w-full lg:w-[50%] '>
         <div className='flex flex-col items-start justify-center max-w-[85%] mx-auto'>
           <div className='text-[55px] leading-tight'>
             <span className='italic font-medium'>Creator</span>
@@ -47,20 +47,20 @@ const Hero = () => {
             <input
               id='searchid'
               type='text'
-              className='border h-[50px] border-gray-300 max-w-[11rem]  px-4 py-[8px] outline-none text-gray-600 flex items-center justify-center'
+              className='border h-[50px] border-gray-300 max-w-[8rem] lg:max-w-[9rem] xl:max-w-[11rem]  px-4 py-[8px] outline-none text-gray-600 flex items-center justify-center'
             />
-            <button className='bg-[#4B5563] h-[50px] px-2 text-white border-none outline-none rounded-none rounded-r-lg py-2'>
+            <button className='bg-[#4B5563] h-[50px] px-2 min-w-[5rem] text-white border-none outline-none rounded-none rounded-r-lg py-2'>
               Join Us
             </button>
           </div>
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center w-[50%] relative'>
+      <div className='flex flex-col items-center justify-center w-full lg:w-[50%] mx-auto relative'>
         <video
           loop
           autoPlay
           muted
-          className={`w-[92%] rounded-2xl mr-auto h-[400px] object-fill`}
+          className={`w-[92%] rounded-2xl mx-auto lg:mr-auto h-[400px] object-fill `}
         >
           <source src={video} type='video/mp4' />
           Your browser does not support the video tag.
@@ -69,7 +69,7 @@ const Hero = () => {
         <img
           src={gifimg}
           alt=''
-          className='absolute max-w-[7rem] -bottom-6 right-8 rounded-full   '
+          className='absolute max-w-[7rem] -bottom-6 right-4 rounded-full   '
         />
       </div>
     </div>

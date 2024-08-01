@@ -27,13 +27,9 @@ import { BsFillThreadsFill, BsInstagram } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
-    <footer class='w-full px-2 pb-10 relative'>
-      <img
-        src={HeaderSvg}
-        alt='logo'
-        className='cursor-pointer w-full absolute bottom-0'
-      />
-      <div class='w-full flex items-start justify-start'>
+    <footer class=' w-full pr-2 pl-4 lg:pb-10 relative '>
+      {/* <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' /> */}
+      <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center '>
         <div
           style={{
             background: 'rgba(255, 255, 255, 0.2)',
@@ -43,7 +39,7 @@ const Footer = () => {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.6)',
           }}
-          className='flex flex-col items-start justify-center px-2 py-10 ml-4 mb-5'
+          className='flex flex-col items-start justify-center px-2 py-10  sm:ml-4 mb-5 w-full lg:w-auto'
         >
           <div className='px-8'>
             {' '}
@@ -69,9 +65,9 @@ const Footer = () => {
             and creators safe by keeping their personal information private.
           </p>
         </div>
-        <div className='flex flex-col w-[68%] px-8 mb-10'>
-          <div className='flex items-center justify-between'>
-            <div class='grid grid-cols-2 lg:grid-cols-3 gap-14 pt-4 max-w-md mx-auto md:max-w-xl lg:max-w-full ml-8'>
+        <div className=' w-full lg:w-[68%] lg:px-8 mb-10'>
+          <div className='flex flex-col items-start justify-center 2xl:items-center 2xl:justify-between 2xl:flex-row'>
+            <div class='grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-4 sm:gap-10 lg:gap-14 pt-4 min-w-[90%] lg:min-w-[65%] mx-auto md:max-w-xl lg:max-w-full lg:ml-8'>
               <div class='block'>
                 <ul class='text-[16px] transition-all duration-500'>
                   <li class='mb-6 text-[20px] font-bold text'>
@@ -162,9 +158,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class='flex flex-col justify-center items-start mt-[5.5rem]'>
-              <span className='text text-[20px] mb-6'>Follow Us</span>
-              <div className='grid grid-cols-5 gap-x-3 gap-y-3 mr-[2rem]'>
+            <div class='mr-auto pl-6 2xl:pl-0 flex flex-col justify-center items-start 2xl:mt-[5.5rem]'>
+              <span className=' text text-[20px] mb-2'>Follow Us</span>
+              <div className='flex flex-wrap items-center justify-start gap-3 lg:grid grid-cols-5 lg:gap-x-3 lg:gap-y-3 lg:mr-[2rem] w-full'>
                 <a
                   href='/'
                   class='overflow-hidden w-10 h-10 relative rounded-[8px] border border-[#E5E7EB] flex justify-center items-center group transition-all ease-in-out delay-50 duration-200'
@@ -308,33 +304,35 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className='w-full border-t border-b-[#E1E5EA] my-8'>
-            <div className='flex items-center justify-between mt-6'>
-              <p className='text-[#606E80] text-[15px] leading-loose'>
+          <div className='w-full border-t border-b-[#E1E5EA] mt-8 lg:mb-8'>
+            <div className='w-full px-5 xl:px-0 flex flex-col-reverse xl:flex-row lg:items-center justify-around mt-6'>
+              <p className='text-[#606E80] text-sm xl:text-[15px] leading-loose mt-4 mb-0 xl:mt-0 w-full'>
                 Copyright © 2024, All Rights Reserved - MWP Entertainment LLC
                 <br />
                 Developed by CV Infotech
               </p>
-              <img
-                src={img1}
-                alt='logo'
-                className='cursor-pointer w-[5.9rem]'
-              />
-              <img
-                src={img2}
-                alt='logo'
-                className='cursor-pointer w-[3.75rem]'
-              />
-              <img
-                src={img3}
-                alt='logo'
-                className='cursor-pointer w-[7.5rem]'
-              />
-              <img
-                src={img4}
-                alt='logo'
-                className='cursor-pointer w-[7.5rem]'
-              />
+              <div className='flex items-center justify-around w-full'>
+                <img
+                  src={img1}
+                  alt='logo'
+                  className='cursor-pointer w-[4.5rem] lg:w-[5.9rem]'
+                />
+                <img
+                  src={img2}
+                  alt='logo'
+                  className='cursor-pointer w-[1.75rem lg:w-[3.75rem]'
+                />
+                <img
+                  src={img3}
+                  alt='logo'
+                  className='cursor-pointer w-[5.5rem] lg:w-[7.5rem]'
+                />
+                <img
+                  src={img4}
+                  alt='logo'
+                  className='cursor-pointer w-[5.5rem] lg:w-[7.5rem]'
+                />
+              </div>
             </div>
           </div>
         </div>
