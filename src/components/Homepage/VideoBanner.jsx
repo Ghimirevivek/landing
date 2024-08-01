@@ -1,10 +1,11 @@
 import React from 'react';
 import mapVideo from '../../Assets/MinimalVideo.mp4';
 import minimalgif from '../../Assets/minimalgif.gif';
+import { FaUserPlus } from 'react-icons/fa';
 const VideoBanner = () => {
   return (
-    <div className='w-full h-full '>
-      {/* <img src={minimalgif} alt='circuit' className='w-full' /> */}
+    <div className='w-full flex flex-col items-center justify-center relative text-center'>
+      {/* <img src={minimalgif} alt='circuit' className='w-[100%]' /> */}
       <video
         autoPlay
         loop
@@ -18,7 +19,30 @@ const VideoBanner = () => {
         />
         Your browser does not support the video tag.
       </video>
-      <div className=''></div>
+      <div className='relative -top-[4rem] text-[30px] leading-tight max-w-[1000px]'>
+        <span className=' ml-2 text-[56px]'>
+          {' '}
+          <span style={{ fontWeight: '800' }} className=''>
+            What about
+          </span>
+          <span className='text'> My Data?</span>
+        </span>
+        <p className='text-[#606E80] text-[20px] mt-4 font-medium px-8 inter'>
+          At CreatorsHub your safety and privacy is our number one goal. It will
+          always be protected and fully secured.
+        </p>
+        <div className='flex items-center justify-center gap-6 my-8'>
+          <button
+            size='sm'
+            className='font-semibold min-w-[8rem] bg-black text-white rounded-xl flex items-center justify-center gap-2 text-[15px] mybutton'
+          >
+            <FaUserPlus /> Join Now
+          </button>
+          <p className='text-[20px] inter text-[#606E80]'>
+            It's Free<span>🎉</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
