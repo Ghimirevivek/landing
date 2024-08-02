@@ -5,7 +5,7 @@ const BoxComponent = ({ image1, image2, text }) => {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <>
+    <div className='shadow-inner'>
       {text || image1 || image2 ? (
         <div>
           {' '}
@@ -17,12 +17,12 @@ const BoxComponent = ({ image1, image2, text }) => {
               }}
               onMouseEnter={() => setHovering(true)}
               onMouseLeave={() => setHovering(false)}
-              className='w-[120px] hoverbox h-[120px] border group transition-all delay-50 duration-500 flex flex-col items-center justify-center'
+              className='min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] hoverbox border group transition-all delay-50 duration-500 flex flex-col items-center justify-center'
             >
               <img
                 src={image1}
                 alt='cardimage1'
-                className={`w-12 transition-all delay-100 duration-500 ${
+                className={`w-7 sm:w-12 transition-all delay-100 duration-500 ${
                   hovering
                     ? 'opacity-100 transform -translate-y-1'
                     : 'opacity-0'
@@ -36,7 +36,7 @@ const BoxComponent = ({ image1, image2, text }) => {
               <img
                 src={image2}
                 alt='cardimage2'
-                className={`w-12 absolute transition-all delay-50 duration-500 ${
+                className={`w-7 sm:w-12 absolute transition-all delay-50 duration-500 ${
                   hovering ? 'opacity-5 ' : 'opacity-100'
                 }`}
                 style={{
@@ -46,7 +46,7 @@ const BoxComponent = ({ image1, image2, text }) => {
                 }}
               />
               <Typography
-                className={` transition-all duration-500 font-semibold ${
+                className={` transition-all duration-500 font-semibold text-[13px] sm:text-[16px] ${
                   hovering ? 'opacity-100 delay-300' : 'opacity-0'
                 }`}
                 style={{
@@ -63,19 +63,19 @@ const BoxComponent = ({ image1, image2, text }) => {
               style={{
                 boxShadow: 'rgba(0, 0, 0, 0.06) 1px 1px 40px 0px inset',
               }}
-              className='w-[120px] h-[120px] border flex flex-col items-center justify-center gap-2'
+              className='min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] border flex flex-col items-center justify-center gap-2'
             >
               <img
                 src={image1}
                 alt='cardimage1'
-                className={`w-9`}
+                className={`w-5 sm:w-9`}
                 style={{
                   transitionTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
                 }}
               />
 
               <Typography
-                className={`font-semibold `}
+                className={`font-semibold text-[13px] sm:text-[16px]`}
                 style={{
                   transitionTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
                 }}
@@ -92,10 +92,10 @@ const BoxComponent = ({ image1, image2, text }) => {
               // boxShadow: 'rgba(0, 0, 0, 0.10) 1px 1px 40px 0px inset',
             }
           }
-          className='w-[120px] h-[120px] border flex flex-col items-center justify-center gap-2'
+          className='min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] border flex flex-col items-center justify-center gap-2'
         ></div>
       )}
-    </>
+    </div>
   );
 };
 

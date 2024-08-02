@@ -13,23 +13,23 @@ const Hero = () => {
         borderRadius: '15px',
         boxShadow:
           'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-        backdropFilter: 'blur(5px)',
+
         WebkitBackdropFilter: 'blur(5px)',
         border: '2px solid rgba(233,233,232,0.3)',
       }}
-      className='py-16 xl:px-4 w-[95%] mx-auto rounded-lg flex items-center justify-between mb-10 flex-col lg:flex-row gap-4 overflow-clip'
+      className='py-16 xl:px-4 w-[99%] sm:w-[95%] mx-auto rounded-lg flex items-center justify-between mb-10 flex-col lg:flex-row gap-4 '
     >
       <div className='w-full lg:w-[50%] '>
         <div className='flex flex-col items-start justify-center max-w-[85%] mx-auto'>
-          <div className='text-[55px] leading-tight'>
+          <div className='text-[45px] sm:text-[55px] leading-tight flex flex-wrap'>
             <span className='italic font-medium'>Creator</span>
-            <span className='text ml-2 text-[55px]'>Appreciation</span>
+            <span className='text sm:ml-2 '>Appreciation</span>
             <br />
             <span style={{ fontWeight: '800' }} className=''>
               Made Safe and Easy
             </span>
           </div>
-          <p className='text-[#606E80] text-[19px] mt-4 font-medium '>
+          <p className='text-[#606E80] text-[17px] sm:text-[19px] mt-4 font-medium '>
             Fans support their favorite creators by sending them gifts,
             subscribing to their exclusive content or by tipping them for their
             hard work. All the while keeping both fans and creators safe by
@@ -37,19 +37,19 @@ const Hero = () => {
             creators with all the important tools to create, share and then
             monetize their content.
           </p>
-          <div className='mt-8 flex items-center justify-center mr-auto'>
+          <div className='mt-8 flex items-center justify-center mr-auto '>
             <label
               htmlFor='searchid'
-              className='text-[#6B7280] font-medium text-[18px] bg-[#F8FAFC] border border-r-[0px] h-[50px] flex items-center justify-center rounded-l-lg px-3'
+              className='text-[#6B7280] font-medium text-15px sm:text-[18px] bg-[#F8FAFC] border border-r-[0px] h-[50px] flex items-center justify-center rounded-l-lg px-2 sm:px-3'
             >
               creatorshub.online/
             </label>
             <input
               id='searchid'
               type='text'
-              className='border h-[50px] border-gray-300 max-w-[8rem] lg:max-w-[9rem] xl:max-w-[11rem]  px-4 py-[8px] outline-none text-gray-600 flex items-center justify-center'
+              className='border h-[50px] border-gray-300 max-w-[5rem] sm:max-w-[8rem] lg:max-w-[9rem] xl:max-w-[11rem]  px-4 py-[8px] outline-none text-gray-600 flex items-center justify-center'
             />
-            <button className='bg-[#4B5563] h-[50px] px-2 min-w-[5rem] text-white border-none outline-none rounded-none rounded-r-lg py-2'>
+            <button className='bg-[#4B5563] h-[50px] px-1 sm:px-2 min-w-[5rem] text-white border-none outline-none rounded-none rounded-r-lg py-2'>
               Join Us
             </button>
           </div>

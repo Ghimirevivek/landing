@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../globalcomponent/Header/Header';
 import Hero from '../../components/Homepage/Hero';
 import Banner from '../../components/Homepage/Banner';
-import Footer from '../../components/Homepage/Footer';
+import Footer from '../../globalcomponent/Header/Footer';
 import TabsElement from '../../components/Homepage/TabsElement';
 import BottomSection from '../../components/Homepage/BottomSection';
 import VideoBanner from '../../components/Homepage/VideoBanner';

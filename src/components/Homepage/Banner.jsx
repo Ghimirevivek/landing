@@ -25,7 +25,7 @@ export function CardDefault() {
   return (
     <Card
       style={{ background: 'rgba(226,226,226,0.3)' }}
-      className='mt-6 w-[23.25rem] h-[29.25] rotate-6 z-10 glasseffect rounded-3xl'
+      className='mt-6 w-[90%] max-w-[21.25rem] max-h-[25.25rem] sm:max-h-[29.25rem] absolute -right-2 rotate-6 glasseffect rounded-3xl'
     >
       <CardHeader className='relative h-auto my-6'>
         <img
@@ -61,7 +61,7 @@ export function CardDefault2() {
   return (
     <Card
       style={{ background: 'rgba(226,226,226,0.3)' }}
-      className='mt-6 w-[30rem] h-[346px] -rotate-6 relative left-[10rem] -top-4 rounded-3xl glasseffect'
+      className='mt-6 w-[80%] max-w-[25rem] max-h-[16.62rem] sm:max-h-[19.62rem] -rotate-6  rounded-3xl glasseffect'
     >
       <CardHeader className='relative h-auto my-6'>
         <img
@@ -101,21 +101,21 @@ const Banner = () => {
 
   console.log(array);
   return (
-    <div className='py-16 px-4 w-[95%] mx-auto rounded-lg flex flex-col items-center justify-center'>
-      <div className='text-[40px] leading-tight'>
+    <div className='py-6 sm:py-16 px-4 w-[95%] mx-auto rounded-lg flex flex-col items-center justify-center'>
+      <div className='text-[35px] sm:text-[40px] leading-tight'>
         <span className='italic font-medium'>Built for</span>
         <span className='text mx-2 important-text text'>Creators</span>
         <span style={{ fontWeight: '800' }} className=''>
           of all platforms.
         </span>
       </div>
-      <p className='text-[#606E80] text-[20px] mt-6 font-medium max-w-[45rem] text-center'>
+      <p className='text-[#606E80] text-[18px] sm:text-[20px] lg:mb-0 my-6 font-medium max-w-[45rem] text-center'>
         Now your fans can seamlessly and effortlessly show their support <br />{' '}
         and appreciation of the content you work tirelessly to create on any{' '}
         <br /> of the platforms you create on.
       </p>
-      <div className='flex items-center justify-between w-full'>
-        <div className='grid grid-cols-4'>
+      <div className='flex flex-col lg:flex-row items-center justify-start w-full py-[8rem]'>
+        <div className='grid grid-cols-4 min-w-[320px] sm:min-w-[500px] lg:min-w-[400px] xl:min-w-[500px] shadow-lg'>
           {array.map((item, index) => (
             <BoxComponent
               key={index}
@@ -125,9 +125,11 @@ const Banner = () => {
             />
           ))}
         </div>
-
-        <CardDefault2 />
-        <CardDefault />
+        <div className='flex items-center justify-start relative my-20 top-10 lg:-top-4 lg:my-0 w-full'>
+          {' '}
+          <CardDefault2 />
+          <CardDefault />
+        </div>
       </div>
       <style jsx>{`
         .hover-shadowbox:hover {

@@ -12,6 +12,11 @@ module.exports = withMT({
           'radial-gradient(ellipse at left, #FAC9D6, transparent), radial-gradient(ellipse at right, #C8C5F4, transparent)',
         'header-gradient': "url('/src/Assets/header-gradient.png')",
       },
+      screens: {
+        md: '738px',
+        '3xl': '1436px',
+        '4xl': '1592px',
+      },
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],
