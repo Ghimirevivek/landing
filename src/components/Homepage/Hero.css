@@ -17,6 +17,7 @@
 .important-text {
   font-size: 40px !important;
 }
+
 @keyframes animate {
   to {
     background-position: 400%;

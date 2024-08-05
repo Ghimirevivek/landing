@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Tabs,
   TabsHeader,
@@ -81,12 +81,12 @@ export function CarouselTransition1() {
           WebkitBackdropFilter: 'blur(5px)',
           // border: '2px solid rgba(233,233,232,0.1)',
         }}
-        className='relative w-full h-[40rem] '
+        className='relative w-full  '
       >
         <img
           src={carousel1}
           alt='logo'
-          className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+          className='cursor-pointer  bg-no-repeat object-contain w-full '
         />
         {/* <div className='flex items-center justify-between h-full px-20'>
           <div className='text-[40px] leading-tight flex flex-col items-start justify-start'>
@@ -137,17 +137,17 @@ export function CarouselTransition1() {
       <img
         src={carousel2}
         alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+        className='cursor-pointer  bg-no-repeat object-contain w-full '
       />
       <img
         src={carousel3}
         alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+        className='cursor-pointer  bg-no-repeat object-contain w-full '
       />
       <img
         src={carousel4}
         alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+        className='cursor-pointer  bg-no-repeat object-contain w-full '
       />
     </Carousel>
   );
@@ -217,30 +217,30 @@ export function CarouselTransition2() {
           WebkitBackdropFilter: 'blur(5px)',
           // border: '2px solid rgba(233,233,232,0.1)',
         }}
-        className='relative w-full h-[40rem] '
+        className='relative w-full '
       >
         <img
           src={carousel1}
           alt='logo'
-          className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+          className='cursor-pointer  bg-no-repeat object-cover w-full'
         />
       </div>
       <img
         src={carousel6}
         alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+        className='cursor-pointer  bg-no-repeat object-cover w-full'
       />
       <img
         src={carousel7}
         alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full h-[40rem]'
+        className='cursor-pointer  bg-no-repeat object-cover w-full'
       />
     </Carousel>
   );
 }
 const CreatorContent = () => (
   <div className='flex flex-col items-center justify-center'>
-    <p className=' my-10  max-w-[65rem]'>
+    <p className='mb-10 mt-4 lg:my-10  max-w-[65rem]'>
       Empower your creative journey on CreatorsHub with intuitive tools designed
       for creators. Why Join CreatorsHub? As a creator, showcase your talents
       through live streaming, upload features, and wishlists. Engage with your
@@ -375,7 +375,7 @@ const CreatorContent = () => (
           <span className='font-bold mx-2  '>Pay</span>
           <span className='italic font-normal'>Per View</span>
         </div>
-        <p className='  lg:max-w-[40rem] text-[20px] inter'>
+        <p className='lg:max-w-[40rem] text-[20px] inter'>
           Monetize your best work with exclusive pay-per-video and premium
           content options. Engage your audience with unique features and
           insights, enhancing viewer satisfaction.
@@ -395,7 +395,7 @@ const CreatorContent = () => (
 
 const UserContent = () => (
   <div className='flex flex-col items-center justify-center'>
-    <p className='my-10  lg:max-w-[65rem]'>
+    <p className='mb-10 mt-4 lg:my-10   lg:max-w-[65rem]'>
       Explore the user-centric functionalities of CreatorsHub, where members can
       easily browse, discover, and support their favorite creators. CreatorsHub
       offers a secure platform where you can send gifts and contributions
@@ -426,9 +426,57 @@ const TabsElement = () => {
       desc: <UserContent />,
     },
   ];
+  const getResponsiveStyles = () => {
+    const width = window.innerWidth;
+    let minWidth = '25rem'; // Default minWidth
+    let minHeight = '3.3rem';
+    if (width <= 640) {
+      minWidth = '16rem';
+      minHeight = '2.3rem';
+    } else if (width >= 640 && width < 1024) {
+      minWidth = '20rem';
+      minHeight = '2.8rem';
+    } else if (width >= 1024 && width < 1280) {
+      minWidth = '24rem';
+      minHeight = '3rem';
+    } else if (width >= 1280) {
+      minWidth = '25rem';
+      minHeight = '3.3rem';
+    }
+
+    return {
+      all: 'unset',
+      display: 'flex',
+      justifyItems: 'center',
+      alignItems: 'center',
+      background: 'rgba(255, 255, 255, 0.2)',
+      borderRadius: '50px',
+      boxShadow:
+        'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+      backdropFilter: 'blur(5px)',
+      WebkitBackdropFilter: 'blur(5px)',
+      border: '2px solid rgba(233,233,232,0.3)',
+      padding: '0 1rem',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s ease',
+      minWidth,
+      minHeight,
+    };
+  };
+  const [styles, setStyles] = useState(getResponsiveStyles());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setStyles(getResponsiveStyles());
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className='flex flex-col items-center justify-center w-full'>
-      <div className='text-[55px] font-medium my-6'>
+    <div className='mt-20 lg:mt-0 flex flex-col items-center justify-center max-w-full'>
+      <div className='text-[30px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[55px] font-medium my-2 md:my-4 xl:my-6'>
         Are You A <span className='text'>Creator</span>/ User?
       </div>
       <Tabs
@@ -444,27 +492,11 @@ const TabsElement = () => {
         }}
       >
         <TabsHeader
-          style={{
-            all: 'unset',
-            display: 'flex',
-            justifyItems: 'center',
-            alignItems: 'center',
-            background: 'rgba(255, 255, 255, 0.2)',
-            borderRadius: '50px',
-            boxShadow:
-              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-            backdropFilter: 'blur(5px)',
-            WebkitBackdropFilter: 'blur(5px)',
-            border: '2px solid rgba(233,233,232,0.3)',
-            minWidth: '25rem',
-            minHeight: '3.3rem',
-            padding: '0 1rem',
-            cursor: 'pointer',
-            transition: 'background-color 0.3s ease',
-          }}
+          style={styles}
           indicatorProps={{
-            className: 'bg-transparent shadow-none rounded-full',
+            className: 'bg-transparent shadow-none rounded-full ',
           }}
+          className='min-h-[0.3rem] min-w-[20rem]'
         >
           {data.map(({ label, value }) => (
             <Tab
@@ -499,7 +531,7 @@ const TabsElement = () => {
             <TabPanel
               key={value}
               value={value}
-              className='text-center text-[#606E80] text-[20px] font-medium inter min-w-[60rem] mb-10 tracking-normal leading-relaxed'
+              className='text-center text-[#606E80] text-[17px] sm:text-[18px] lg:text-[20px] font-medium inter xl:min-w-[60rem] mb-10 tracking-normal leading-relaxed'
             >
               {desc}
             </TabPanel>

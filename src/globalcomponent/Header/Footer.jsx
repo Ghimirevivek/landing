@@ -27,9 +27,9 @@ import { BsFillThreadsFill, BsInstagram } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
-    <footer class=' w-full pr-2 pl-4 lg:pb-10 relative '>
-      <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' />
-      <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center '>
+    <footer class=' w-full pr-2 pl-2 lg:pb-10 relative '>
+      {/* <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' /> */}
+      <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center pr-2'>
         <div
           style={{
             background: 'rgba(255, 255, 255, 0.2)',

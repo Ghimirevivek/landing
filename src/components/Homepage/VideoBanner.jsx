@@ -5,8 +5,8 @@ import { FaUserPlus } from 'react-icons/fa';
 const VideoBanner = () => {
   return (
     <div className='w-full flex flex-col items-center justify-center relative text-center'>
-      {/* <img src={minimalgif} alt='circuit' className='w-[100%]' /> */}
-      <video
+      <img src={minimalgif} alt='circuit' className='w-[100%]' />
+      {/* <video
         autoPlay
         loop
         muted
@@ -18,7 +18,7 @@ const VideoBanner = () => {
           className='bg-transparent border-none'
         />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <div className='relative -top-[4rem] text-[30px] leading-tight max-w-[1000px]'>
         <span className=' ml-2 text-[56px]'>
           {' '}
