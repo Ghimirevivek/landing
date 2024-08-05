@@ -27,7 +27,7 @@ import { BsFillThreadsFill, BsInstagram } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
-    <footer class=' w-full pr-2 pl-2 lg:pb-10 relative '>
+    <footer class=' w-full pr-2 pl-2 lg:pb-10 relative mt-[8rem]'>
       {/* <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' /> */}
       <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center pr-2'>
         <div
@@ -306,7 +306,7 @@ const Footer = () => {
           </div>
           <div className='w-full border-t border-b-[#E1E5EA] mt-8 lg:mb-8'>
             <div className='w-full px-5 xl:px-0 flex flex-col-reverse xl:flex-row lg:items-center justify-around mt-6'>
-              <p className='text-[#606E80] text-sm xl:text-[15px] leading-loose mt-4 mb-0 xl:mt-0 w-full'>
+              <p className='text-[#606E80] text-sm xl:text-[15px] leading-loose mt-4 mb-0 xl:mt-0 2xl:w-full'>
                 Copyright © 2024, All Rights Reserved - MWP Entertainment LLC
                 <br />
                 Developed by CV Infotech

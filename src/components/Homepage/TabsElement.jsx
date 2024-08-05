@@ -16,6 +16,14 @@ import carousel3 from '../../Assets/carousel3.png';
 import carousel4 from '../../Assets/carousel4.png';
 import carousel6 from '../../Assets/carousel5.png';
 import carousel7 from '../../Assets/carousel6.png';
+import gify from '../../Assets/gifybox.gif';
+import message from '../../Assets/Message.svg';
+import wishlist from '../../Assets/Wishlist 1.png';
+import butimg from '../../Assets/Button.png';
+import img1 from '../../Assets/Component 121.png';
+import gift from '../../Assets/gift.png';
+import coin from '../../Assets/coin.png';
+import money from '../../Assets/money.png';
 export function CarouselTransition1() {
   return (
     <Carousel
@@ -240,7 +248,7 @@ export function CarouselTransition2() {
 }
 const CreatorContent = () => (
   <div className='flex flex-col items-center justify-center'>
-    <p className='mb-10 mt-4 lg:my-10  max-w-[65rem]'>
+    <p className='mb-10 mt-4 lg:my-10 lg:max-w-[65rem]'>
       Empower your creative journey on CreatorsHub with intuitive tools designed
       for creators. Why Join CreatorsHub? As a creator, showcase your talents
       through live streaming, upload features, and wishlists. Engage with your
@@ -249,144 +257,211 @@ const CreatorContent = () => (
       personal information is protected.
     </p>
     <CarouselTransition1 />
-    <div className='grid grid-cols-1 md:grid-cols-2 w-full my-10 gap-y-4'>
-      <div
-        style={{
-          background: 'rgba(255, 255, 255, 0.2)',
-          borderRadius: '20px',
-          boxShadow:
-            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
-          border: '2px solid rgba(233,233,232,0.3)',
-        }}
-        className='max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group relative'
-      >
-        <img
-          src={gradient}
-          alt='gradient'
-          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
-        />
-        <div className='text-[32px] leading-relaxed text-black ubuntu'>
-          <span className='italic font-normal'>Live</span>
-          <span className='font-bold mx-2  '>Streaming</span>
-        </div>
-        <p className=' max-w-[40rem] text-[20px] inter'>
-          Dive into dynamic live streaming on CreatorsHub with seamless Twitch
-          integration. Engage fans in real-time, receive gift alerts, and
-          enhance your streaming profile.
-        </p>
-        <div className='min-h-[226px]'>
-          {' '}
+    <div className='flex flex-col gap-8 w-full mt-10 '>
+      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+        {' '}
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
           <img
-            src={gifimg}
-            alt='cardimage'
-            className='w-full h-[15rem] rounded-2xl object-fill'
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
           />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='italic font-normal'>Live</span>
+            <span className='font-bold mx-2  '>Streaming</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Dive into dynamic live streaming on CreatorsHub with seamless Twitch
+            integration. Engage fans in real-time, receive gift alerts, and
+            enhance your streaming profile.
+          </p>
+          <div className='xl:min-h-[226px] mt-2 relative group'>
+            <img
+              src={gifimg}
+              alt='cardimage'
+              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill'
+            />
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-[90%] absolute opacity-0 bottom-0 group-hover:-translate-y-20 group-hover:opacity-100 transition ease-in delay-50 duration-500'>
+              <img src={gify} alt='' className='w-10 sm:w-16 xl:w-20' />
+              <img src={message} alt='' className='xl:w-[80%] 3xl:w-full' />
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
+          <img
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
+          />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='font-bold mx-2'>Wishlists</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Upload wishlists with products, cash tips, crowdfunding goals, or
+            small gifts. Receive support directly from your fans.
+          </p>
+          <div className='xl:min-h-[226px] mt-2 relative group top-2'>
+            <img
+              src={wishlist}
+              alt='cardimage'
+              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill group-hover:scale-x-110 group-hover:scale-y-110 transition ease-in delay-100 duration-500'
+            />
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition group-hover:scale-x-110 group-hover:scale-y-110 ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-full absolute bottom-[6rem] transition ease-in delay-50 duration-500'>
+              <img
+                src={butimg}
+                alt=''
+                className='w-10 sm:w-20 xl:w-[6rem] absolute -left-[4.5rem] group-hover:-translate-x-8 group-hover:scale-110  transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={gift}
+                alt=''
+                className='opacity-0 group-hover:opacity-100 w-[1.8rem] absolute -left-10 group-hover:-translate-y-[3rem] group-hover:-translate-x-[5rem] group-hover:scale-150  transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={coin}
+                alt=''
+                className=' opacity-0 group-hover:opacity-100 w-[1.8rem] absolute -left-10 group-hover:-translate-y-[3.5rem] group-hover:-translate-x-4 group-hover:scale-150  transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={money}
+                alt=''
+                className='opacity-0 group-hover:opacity-100 w-[1.6rem] absolute -left-10 group-hover:translate-y-[3rem] group-hover:-translate-x-[3rem] group-hover:scale-150 transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={img1}
+                alt=''
+                className='xl:w-[80%] 3xl:w-full max-w-[8rem] absolute opacity-0 -top-40 -right-10 group-hover:translate-x-8 group-hover:-translate-y-2 group-hover:scale-x-105 group-hover:scale-y-110 group-hover:opacity-100 transition ease-in delay-100 duration-500'
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div
-        style={{
-          background: 'rgba(255, 255, 255, 0.2)',
-          borderRadius: '20px',
-          boxShadow:
-            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
-          border: '2px solid rgba(233,233,232,0.3)',
-        }}
-        className='relative max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
-      >
-        <img
-          src={gradient}
-          alt='gradient'
-          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
-        />
-        <div className='text-[32px] leading-relaxed text-black ubuntu'>
-          {/* <span className='italic font-normal'>Live</span> */}
-          <span className='font-bold mx-2'>Wishlists</span>
-        </div>
-        <p className=' max-w-[40rem] text-[20px] inter'>
-          Upload wishlists with products, cash tips, crowdfunding goals, or
-          small gifts. Receive support directly from your fans.
-        </p>
-        <div className='min-h-[226px]'>
-          {' '}
+      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+        {' '}
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
           <img
-            src={gifimg}
-            alt='cardimage'
-            className='w-full h-[15rem] rounded-2xl object-fill'
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
           />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='italic font-normal'>Access to real-time</span>
+            <span className='font-bold mx-2  '>notifications</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Get real-time gift alerts from your fans—crowdfunding, cash gifts,
+            tips, and wishlist items included. Stay connected and appreciated
+            with instant notifications.
+          </p>
+          <div className='xl:min-h-[226px] mt-2 relative group'>
+            <img
+              src={gifimg}
+              alt='cardimage'
+              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill'
+            />
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-[90%] absolute opacity-0 bottom-0 group-hover:-translate-y-20 group-hover:opacity-100 transition ease-in delay-50 duration-500'>
+              <img src={gify} alt='' className='w-10 sm:w-16 xl:w-20' />
+              <img src={message} alt='' className='xl:w-[80%] 3xl:w-full' />
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        style={{
-          background: 'rgba(255, 255, 255, 0.2)',
-          borderRadius: '20px',
-          boxShadow:
-            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
-          border: '2px solid rgba(233,233,232,0.3)',
-        }}
-        className='relative max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
-      >
-        <img
-          src={gradient}
-          alt='gradient'
-          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
-        />
-        <div className='text-[32px] leading-relaxed text-black ubuntu'>
-          <span className='italic font-normal'>Access to real-time</span>
-          <span className='font-bold mx-2  '>notifications</span>
-        </div>
-        <p className=' max-w-[40rem] text-[20px] inter'>
-          Get real-time gift alerts from your fans—crowdfunding, cash gifts,
-          tips, and wishlist items included. Stay connected and appreciated with
-          instant notifications.
-        </p>
-        <div className='min-h-[226px]'>
-          {' '}
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
           <img
-            src={gifimg}
-            alt='cardimage'
-            className='w-full h-[15rem] rounded-2xl object-fill'
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
           />
-        </div>
-      </div>
-      <div
-        style={{
-          background: 'rgba(255, 255, 255, 0.2)',
-          borderRadius: '20px',
-          boxShadow:
-            'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
-          border: '2px solid rgba(233,233,232,0.3)',
-        }}
-        className='relative max-w-[730px] max-h-[420px] flex flex-col items-center justify-center group'
-      >
-        <img
-          src={gradient}
-          alt='gradient'
-          className='absolute bottom-0 object-cover overflow-hidden rounded-2xl'
-        />
-        <div className='text-[32px] leading-relaxed text-black ubuntu'>
-          <span className='font-bold mx-2  '>Pay</span>
-          <span className='italic font-normal'>Per View</span>
-        </div>
-        <p className='lg:max-w-[40rem] text-[20px] inter'>
-          Monetize your best work with exclusive pay-per-video and premium
-          content options. Engage your audience with unique features and
-          insights, enhancing viewer satisfaction.
-        </p>
-        <div className='min-h-[226px]'>
-          {' '}
-          <img
-            src={gifimg}
-            alt='cardimage'
-            className='w-full h-[15rem] rounded-2xl object-fill'
-          />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='font-bold mx-2  '>Pay</span>
+            <span className='italic font-normal'>Per View</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Monetize your best work with exclusive pay-per-video and premium
+            content options. Engage your audience with unique features and
+            insights, enhancing viewer satisfaction.
+          </p>
+          <div className='xl:min-h-[226px] mt-2 relative group top-2'>
+            <img
+              src={wishlist}
+              alt='cardimage'
+              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill group-hover:scale-x-110 group-hover:scale-y-110 transition ease-in delay-100 duration-500'
+            />
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition group-hover:scale-x-110 group-hover:scale-y-110 ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-full absolute bottom-[6rem] transition ease-in delay-50 duration-500'>
+              <img
+                src={butimg}
+                alt=''
+                className='w-10 sm:w-20 xl:w-[6rem] absolute -left-[4.5rem] group-hover:-translate-x-8 group-hover:scale-110  transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={gift}
+                alt=''
+                className='opacity-0 group-hover:opacity-100 w-[1.8rem] absolute -left-10 group-hover:-translate-y-[3rem] group-hover:-translate-x-[5rem] group-hover:scale-150  transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={coin}
+                alt=''
+                className=' opacity-0 group-hover:opacity-100 w-[1.8rem] absolute -left-10 group-hover:-translate-y-[3.5rem] group-hover:-translate-x-4 group-hover:scale-150  transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={money}
+                alt=''
+                className='opacity-0 group-hover:opacity-100 w-[1.6rem] absolute -left-10 group-hover:translate-y-[3rem] group-hover:-translate-x-[3rem] group-hover:scale-150 transition ease-in delay-100 duration-500'
+              />
+              <img
+                src={img1}
+                alt=''
+                className='xl:w-[80%] 3xl:w-full max-w-[8rem] absolute opacity-0 -top-40 -right-10 group-hover:translate-x-8 group-hover:-translate-y-2 group-hover:scale-x-105 group-hover:scale-y-110 group-hover:opacity-100 transition ease-in delay-100 duration-500'
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -395,7 +470,7 @@ const CreatorContent = () => (
 
 const UserContent = () => (
   <div className='flex flex-col items-center justify-center'>
-    <p className='mb-10 mt-4 lg:my-10   lg:max-w-[65rem]'>
+    <p className='mb-10 mt-4 lg:my-10 lg:max-w-[65rem]'>
       Explore the user-centric functionalities of CreatorsHub, where members can
       easily browse, discover, and support their favorite creators. CreatorsHub
       offers a secure platform where you can send gifts and contributions
@@ -475,8 +550,8 @@ const TabsElement = () => {
   }, []);
 
   return (
-    <div className='mt-20 lg:mt-0 flex flex-col items-center justify-center max-w-full'>
-      <div className='text-[30px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[55px] font-medium my-2 md:my-4 xl:my-6'>
+    <div className='mt-10 lg:mt-0 flex flex-col items-center justify-center max-w-full'>
+      <div className='text-[30px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[55px] font-medium my-2'>
         Are You A <span className='text'>Creator</span>/ User?
       </div>
       <Tabs

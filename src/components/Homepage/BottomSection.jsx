@@ -3,7 +3,7 @@ import React from 'react';
 const BottomSection = () => {
   return (
     <div className='my-10'>
-      <div className='text-center text-[30px] sm:text-[40px] md:text-[50px]'>
+      <div className='text-center text-[30px] sm:text-[42px] lg:text-[50px]'>
         <span style={{ fontWeight: '700' }} className='text  mr-2'>
           Join Now
         </span>

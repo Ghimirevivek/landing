@@ -25,7 +25,7 @@ export function CardDefault() {
   return (
     <Card
       style={{ background: 'rgba(226,226,226,0.3)' }}
-      className='mt-6 w-[60%] sm:w-[75%] md:w-[90%] lg:w-[70%] 2lg:w-[78%] xl:w-full lg max-w-[21.25rem] max-h-[23.25rem] sm:max-h-[27.25rem] mg:max-h-[29.25rem] absolute right-[0.5rem] sm:-right-[3rem] md:-right-[7rem] lg:-right-[1rem] rotate-6 glasseffect rounded-3xl'
+      className='mt-6 w-[60%] sm:w-[75%] md:w-[90%] lg:w-[70%] 2lg:w-full xl:w-full lg max-w-[21.25rem] max-h-[23.25rem] sm:max-h-[27.25rem] mg:max-h-[29.25rem] absolute right-[0.5rem] sm:-right-[2rem] md:-right-[7rem] lg:-right-[1rem] rotate-6 glasseffect rounded-3xl'
     >
       <CardHeader className='relative h-auto my-6'>
         <img
@@ -38,7 +38,7 @@ export function CardDefault() {
         {' '}
         <Typography
           color='black'
-          className='text-[20px] sm:text-[37px] lg:text-[30px] xl:text-[37px] allison relative top-0 mb-2'
+          className='text-[20px] sm:text-[32px] lg:text-[30px] xl:text-[35px] allison relative top-0 mb-2'
         >
           “my wishlist is live on Creators Hub”
         </Typography>
@@ -61,7 +61,7 @@ export function CardDefault2() {
   return (
     <Card
       style={{ background: 'rgba(226,226,226,0.3)' }}
-      className='relative right-[0rem] sm:right-[3rem] 2lg:right-[6rem]  mt-6 w-[80%] sm:w-[90%] md:w-full lg:w-[75%] 2lg:w-[85%] xl:w-full max-w-[25rem] max-h-[16.62rem] sm:max-h-[19.62rem] -rotate-6  rounded-3xl glasseffect'
+      className='relative right-[0rem] sm:right-[3rem] 2lg:right-[6rem]  mt-6 w-[80%] sm:w-[90%] md:w-full lg:w-[75%] 2lg:w-full xl:w-full max-w-[25rem] max-h-[16.62rem] sm:max-h-[19.62rem] -rotate-6  rounded-3xl glasseffect'
     >
       <CardHeader className='relative h-auto my-6'>
         <img
@@ -127,7 +127,7 @@ const Banner = () => {
             />
           ))}
         </div>
-        <div className='flex items-center justify-start relative my-10 xl:my-20 top-10 lg:-top-4 lg:my-0'>
+        <div className='flex items-center justify-start relative my-10 top-10 lg:-top-4 lg:my-0'>
           {' '}
           <CardDefault2 />
           <CardDefault />

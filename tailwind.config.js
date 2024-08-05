@@ -13,10 +13,11 @@ module.exports = withMT({
         'header-gradient': "url('/src/Assets/header-gradient.png')",
       },
       screens: {
-        md: '738px',
+        md: '787px',
         '2lg': '1080px',
+        '2xl': '1240px',
         '3xl': '1436px',
-        '4xl': '1592px',
+        '4xl': '1510px',
       },
     },
   },

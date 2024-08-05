@@ -19,8 +19,8 @@ const VideoBanner = () => {
         />
         Your browser does not support the video tag.
       </video> */}
-      <div className='relative -top-[4rem] text-[30px] leading-tight max-w-[1000px]'>
-        <span className=' ml-2 text-[56px]'>
+      <div className='relative -top-[1rem] lg:-top-[4rem] xl:-top-[6rem] text-[30px] leading-tight max-w-[1000px]'>
+        <span className=' ml-2 text-[36px] sm:text-[46px] lg:text-[56px]'>
           {' '}
           <span style={{ fontWeight: '800' }} className=''>
             What about
