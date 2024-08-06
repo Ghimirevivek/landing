@@ -24,6 +24,15 @@ import img1 from '../../Assets/Component 121.png';
 import gift from '../../Assets/gift.png';
 import coin from '../../Assets/coin.png';
 import money from '../../Assets/money.png';
+import game from '../../Assets/gameimg.png';
+import video from '../../Assets/videoimg.png';
+import buttonicon from '../../Assets/_button-icon-small.png';
+import buttonicon1 from '../../Assets/Button Icons (1).png';
+import comment1 from '../../Assets/List.png';
+import comment2 from '../../Assets/List (1).png';
+import buttoniconwrap from '../../Assets/Badge Wrapper.png';
+import comment3 from '../../Assets/1.png';
+
 export function CarouselTransition1() {
   return (
     <Carousel
@@ -327,9 +336,9 @@ const CreatorContent = () => (
             <img
               src={wishlist}
               alt='cardimage'
-              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill group-hover:scale-x-110 group-hover:scale-y-110 transition ease-in delay-100 duration-500'
+              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[15rem] 4xl:h-[16rem] rounded-2xl object-fill group-hover:scale-105 origin-bottom transition ease-in delay-100 duration-500'
             />
-            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition group-hover:scale-x-110 group-hover:scale-y-110 ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition group-hover:scale-105 origin-bottom ease-in delay-50 duration-500 rounded-2xl'></div>
             <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-full absolute bottom-[6rem] transition ease-in delay-50 duration-500'>
               <img
                 src={butimg}
@@ -372,7 +381,7 @@ const CreatorContent = () => (
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.3)',
           }}
-          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+          className=' md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
         >
           <img
             src={gradient}
@@ -388,16 +397,46 @@ const CreatorContent = () => (
             tips, and wishlist items included. Stay connected and appreciated
             with instant notifications.
           </p>
-          <div className='xl:min-h-[226px] mt-2 relative group'>
-            <img
-              src={gifimg}
-              alt='cardimage'
-              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill'
-            />
+          <div className='xl:min-h-[226px] mt-2 relative group '>
+            <div className='overflow-hidden w-full h-full relative group-hover:scale-105 transition ease-in delay-50 duration-500'>
+              {' '}
+              <img
+                src={game}
+                alt='cardimage'
+                className='w-full max-w-[28rem] rounded-2xl object-fill '
+              />
+            </div>
+            <div className=' absolute top-0 -right-[4.5rem]'>
+              <img
+                src={buttonicon}
+                alt=''
+                className='w-12 hidden group-hover:block'
+              />
+              <img
+                src={buttonicon1}
+                alt=''
+                className='w-12 block group-hover:hidden'
+              />
+              <img
+                src={buttoniconwrap}
+                alt=''
+                className='absolute opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-500 -top-1 -right-1 w-5'
+              />
+            </div>
             <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
-            <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-[90%] absolute opacity-0 bottom-0 group-hover:-translate-y-20 group-hover:opacity-100 transition ease-in delay-50 duration-500'>
-              <img src={gify} alt='' className='w-10 sm:w-16 xl:w-20' />
-              <img src={message} alt='' className='xl:w-[80%] 3xl:w-full' />
+
+            <div className='flex flex-col items-end w-[70%] xl:w-full absolute opacity-0 top-14 left-[7.3rem]  group-hover:opacity-100 transition ease-in delay-50 duration-500'>
+              <img
+                src={comment1}
+                alt=''
+                className='group-hover:-translate-x-10 transition ease-in delay-50 duration-500'
+              />
+              <img
+                src={comment2}
+                alt=''
+                className='group-hover:-translate-x-10 transition ease-in delay-50 duration-500'
+              />
+              {/* <img src={buttoniconwrap} alt='' className='' /> */}
             </div>
           </div>
         </div>
@@ -411,7 +450,7 @@ const CreatorContent = () => (
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.3)',
           }}
-          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+          className=' md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
         >
           <img
             src={gradient}
@@ -427,39 +466,38 @@ const CreatorContent = () => (
             content options. Engage your audience with unique features and
             insights, enhancing viewer satisfaction.
           </p>
-          <div className='xl:min-h-[226px] mt-2 relative group top-2'>
-            <img
-              src={wishlist}
-              alt='cardimage'
-              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill group-hover:scale-x-110 group-hover:scale-y-110 transition ease-in delay-100 duration-500'
-            />
-            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition group-hover:scale-x-110 group-hover:scale-y-110 ease-in delay-50 duration-500 rounded-2xl'></div>
-            <div className='flex items-center justify-center gap-1 sm:gap-2 left-7 sm:left-10 xl:left-0 md:gap-4 lg:gap-6 w-[70%] xl:w-full absolute bottom-[6rem] transition ease-in delay-50 duration-500'>
+          <div className='xl:min-h-[226px] mt-2 relative group '>
+            <div className='overflow-hidden w-full h-full relative origin-bottom transition ease-in delay-50 duration-500'>
+              {' '}
+              <div className='flex items-end justify-center'>
+                <img
+                  src={video}
+                  alt='cardimage'
+                  className='w-full max-w-[14rem] group-hover:translate-x-[7rem] relative top-6  rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                />
+                <img
+                  src={video}
+                  alt='cardimage'
+                  className='w-full max-w-[16rem] group-hover:scale-[1.02] group-hover:scale-y-[1.03] relative top-7 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                />
+                <img
+                  src={video}
+                  alt='cardimage'
+                  className='w-full max-w-[14rem] group-hover:-translate-x-[7rem] relative top-6 -z-10 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                />
+              </div>
+            </div>
+
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
+
+            <div className='flex flex-col items-center w-[70%] xl:w-full absolute opacity-0  bottom-0 left-0  group-hover:opacity-100 group-hover:-translate-y-4 transition ease-in delay-50 duration-500'>
               <img
-                src={butimg}
+                src={comment3}
                 alt=''
-                className='w-10 sm:w-20 xl:w-[6rem] absolute -left-[4.5rem] group-hover:-translate-x-8 group-hover:scale-110  transition ease-in delay-100 duration-500'
+                className='w-full max-w-[30rem] z-10'
               />
-              <img
-                src={gift}
-                alt=''
-                className='opacity-0 group-hover:opacity-100 w-[1.8rem] absolute -left-10 group-hover:-translate-y-[3rem] group-hover:-translate-x-[5rem] group-hover:scale-150  transition ease-in delay-100 duration-500'
-              />
-              <img
-                src={coin}
-                alt=''
-                className=' opacity-0 group-hover:opacity-100 w-[1.8rem] absolute -left-10 group-hover:-translate-y-[3.5rem] group-hover:-translate-x-4 group-hover:scale-150  transition ease-in delay-100 duration-500'
-              />
-              <img
-                src={money}
-                alt=''
-                className='opacity-0 group-hover:opacity-100 w-[1.6rem] absolute -left-10 group-hover:translate-y-[3rem] group-hover:-translate-x-[3rem] group-hover:scale-150 transition ease-in delay-100 duration-500'
-              />
-              <img
-                src={img1}
-                alt=''
-                className='xl:w-[80%] 3xl:w-full max-w-[8rem] absolute opacity-0 -top-40 -right-10 group-hover:translate-x-8 group-hover:-translate-y-2 group-hover:scale-x-105 group-hover:scale-y-110 group-hover:opacity-100 transition ease-in delay-100 duration-500'
-              />
+
+              {/* <img src={buttoniconwrap} alt='' className='' /> */}
             </div>
           </div>
         </div>
