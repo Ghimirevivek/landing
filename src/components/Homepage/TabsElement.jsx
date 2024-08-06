@@ -8,6 +8,10 @@ import {
   IconButton,
 } from '@material-tailwind/react';
 import gradient from '../../Assets/gradient/gradient1.png';
+import video1 from '../../Assets/Slider Animations/Creator/Creator Slide 1.mp4';
+import video2 from '../../Assets/Slider Animations/Creator/Creator Slide 2.mp4';
+import video3 from '../../Assets/Slider Animations/Creator/Creator Slide 3.mp4';
+import video4 from '../../Assets/Slider Animations/Creator/Creator Slide 4.mp4';
 import { Carousel } from '@material-tailwind/react';
 import gifimg from '../../Assets/creator1img1.gif';
 import carousel1 from '../../Assets/carousel1.png';
@@ -35,138 +39,293 @@ import comment3 from '../../Assets/1.png';
 
 export function CarouselTransition1() {
   return (
-    <Carousel
-      transition={{ duration: 1 }}
-      autoplay={true}
-      loop={true}
-      className='rounded-xl bg-no-repeat scrollbar-hide'
-      prevArrow={({ handlePrev }) => (
-        <IconButton
-          variant='text'
-          color='gray'
-          size='lg'
-          onClick={handlePrev}
-          className='!absolute top-2/4 left-4 -translate-y-2/4'
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={2}
-            stroke='currentColor'
-            className='h-6 w-6'
+    <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw] overflow-hidden'>
+      <Carousel
+        transition={{ duration: 1 }}
+        autoplay={true}
+        loop={true}
+        className='rounded-xl max-w-[99%] scrollbar-hide'
+        prevArrow={({ handlePrev }) => (
+          <IconButton
+            variant='text'
+            color='gray'
+            size='lg'
+            onClick={handlePrev}
+            className='!absolute top-2/4 left-0'
           >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
-            />
-          </svg>
-        </IconButton>
-      )}
-      nextArrow={({ handleNext }) => (
-        <IconButton
-          variant='text'
-          color='gray'
-          size='lg'
-          onClick={handleNext}
-          className='!absolute top-2/4 !right-4 -translate-y-2/4'
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={2}
-            stroke='currentColor'
-            className='h-6 w-6'
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={2}
+              stroke='currentColor'
+              className='h-6 w-6'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+              />
+            </svg>
+          </IconButton>
+        )}
+        nextArrow={({ handleNext }) => (
+          <IconButton
+            variant='text'
+            color='gray'
+            size='lg'
+            onClick={handleNext}
+            className='!absolute top-2/4 right-0 '
           >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
-            />
-          </svg>
-        </IconButton>
-      )}
-    >
-      <div
-        style={{
-          borderRadius: '15px',
-          // boxShadow:
-          //   'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
-          // border: '2px solid rgba(233,233,232,0.1)',
-        }}
-        className='relative w-full  '
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={2}
+              stroke='currentColor'
+              className='h-6 w-6'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
+              />
+            </svg>
+          </IconButton>
+        )}
       >
-        <img
-          src={carousel1}
-          alt='logo'
-          className='cursor-pointer  bg-no-repeat object-contain w-full '
-        />
-        {/* <div className='flex items-center justify-between h-full px-20'>
-          <div className='text-[40px] leading-tight flex flex-col items-start justify-start'>
-            <div>
-              {' '}
-              <span
-                style={{ fontWeight: '700' }}
-                className='text important-text text text-[40px] '
-              >
-                Sign Up{' '}
-              </span>
-              <span
-                style={{ fontWeight: '700' }}
-                className='text-[40px] text-[#000]'
-              >
-                & Verify Your Profile
-              </span>
-            </div>
-            <p className='text-[#606E80] text-[20px] mt-6 font-medium max-w-[36rem] text-left inter leading-relaxed'>
-              Begin your journey on CreatorsHub by signing up and verifying you
-              own your linked social accounts. Simply add your CreatorsHub link
-              to your platform’s bio, ensuring a secure and authentic experience
-              while also allowing your fans to discover your CreatorsHub.
-            </p>
-          </div>
-          <div className='flex flex-col items-center justify-center'>
-            <div>
-              {' '}
-              <span
-                style={{ fontWeight: '400' }}
-                className='text-[40px] italic text-[#000] mr-2'
-              >
-                Welcome to
-              </span>
-              <span
-                style={{ fontWeight: '700' }}
-                className='text important-text text text-[40px]'
-              >
-                CreatorsHub!
-              </span>
-              <p className='text-[#606E80] text-[16px] font-medium text-center inter leading-relaxed'>
-                Let’s complete creating your profile.
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-start'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
+          />
+          <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
+            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+              <div className='text-left '>
+                {' '}
+                <span style={{ fontWeight: '700' }} className=' text '>
+                  Sign Up{' '}
+                </span>
+                <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                  & Verify Your Profile
+                </span>
+              </div>
+              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+                Begin your journey on CreatorsHub by signing up and verifying
+                you own your linked social accounts. Simply add your CreatorsHub
+                link to your platform’s bio, ensuring a secure and authentic
+                experience while also allowing your fans to discover your
+                CreatorsHub.
               </p>
             </div>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=''>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className='w-full sm:w-[90%] lg:w-full overflow-hidden shadow-none'
+                >
+                  <source
+                    src={video1}
+                    type='video/mp4'
+                    className='bg-transparent border-none'
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-        </div> */}
-      </div>
-      <img
-        src={carousel2}
-        alt='logo'
-        className='cursor-pointer  bg-no-repeat object-contain w-full '
-      />
-      <img
-        src={carousel3}
-        alt='logo'
-        className='cursor-pointer  bg-no-repeat object-contain w-full '
-      />
-      <img
-        src={carousel4}
-        alt='logo'
-        className='cursor-pointer  bg-no-repeat object-contain w-full '
-      />
-    </Carousel>
+        </div>
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-start'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
+          />
+          <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
+            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+              <div className='text-left '>
+                {' '}
+                <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                  Customize Your <br /> Profile and
+                </span>
+                <span style={{ fontWeight: '700' }} className=' text ml-2'>
+                  Stream Live{' '}
+                </span>
+              </div>
+              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+                Engage you audience like never before! Personalize your profile
+                with a gift registry from any online store. Interact in
+                real-time by integrating live streams from Twitch, YouTube and
+                more—broadcast your creativity far and wide.
+              </p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=''>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className='w-full sm:w-[90%] lg:w-full overflow-hidden shadow-none'
+                >
+                  <source
+                    src={video2}
+                    type='video/mp4'
+                    className='bg-transparent border-none'
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-start'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
+          />
+          <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
+            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+              <div className='text-left '>
+                {' '}
+                <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                  Set Up Your
+                </span>
+                <span style={{ fontWeight: '700' }} className=' text ml-2'>
+                  Wish List
+                </span>
+              </div>
+              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+                Unlock endless possibilities with our diverse wishlist options:
+                <br />
+                <span className='text-black'>Small Cash Tips:</span> Receive
+                instant tips from fans during your live streams.
+                <br />
+                <span className='text-black'>Crowdfunding:</span> Dream big! Get
+                funded for high-cost items, with a progress bar to track your
+                progress. <br />
+                <span className='text-black'>Product Links:</span> Add links to
+                products from various stores. Fans contribute, you receive the
+                funds, order the product, and upload the invoice. <br />
+                <span className='text-black'> Small Gift Items:</span>
+                Allow fans to express their appreciation with thoughtful gifts
+                directly from your profile, up to a value of $100.
+              </p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=''>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className='w-full sm:w-[90%] lg:w-full overflow-hidden shadow-none'
+                >
+                  <source
+                    src={video3}
+                    type='video/mp4'
+                    className='bg-transparent border-none'
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            boxSizing: 'border-box',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-between'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-contain w-full  '
+          />
+          <div className='w-full flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between md:gap:6 pl-10 2xl:px-20'>
+            <div className='relative'>
+              <div className=' top-0 left-0 text-[20px] md:text-[25px] 2xl:text-[40px] w-[30rem]'>
+                <div className='text-left '>
+                  {' '}
+                  <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                    Receive Gifts and <br />
+                  </span>
+                  <span style={{ fontWeight: '700' }} className=' text mr-2'>
+                    Notifications
+                    <br />
+                  </span>
+                  <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                    in Real-Time
+                  </span>
+                </div>
+                <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium  text-left inter leading-relaxed'>
+                  Begin your journey on CreatorsHub by signing up and verifying
+                  you own your linked social accounts. Simply add your
+                  CreatorsHub link to your platform’s bio, ensuring a secure and
+                  authentic experience while also allowing your fans to discover
+                  your CreatorsHub.
+                </p>
+              </div>
+            </div>
+
+            <div className='max-w-[35rem]'>
+              <video
+                autoPlay
+                loop
+                muted
+                className='w-full sm:w-[90%] 2xl:w-full overflow-hidden shadow-none bg-transparent'
+              >
+                <source
+                  src={video4}
+                  type='video/mp4'
+                  className='bg-transparent border-none'
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </Carousel>
+    </div>
   );
 }
 export function CarouselTransition2() {
@@ -398,12 +557,12 @@ const CreatorContent = () => (
             with instant notifications.
           </p>
           <div className='xl:min-h-[226px] mt-2 relative group '>
-            <div className='overflow-hidden w-full h-full relative group-hover:scale-105 transition ease-in delay-50 duration-500'>
+            <div className='overflow-hidden w-full h-full relative group-hover:scale-105 origin-bottom transition ease-in delay-50 duration-500'>
               {' '}
               <img
                 src={game}
                 alt='cardimage'
-                className='w-full max-w-[28rem] rounded-2xl object-fill '
+                className='w-full max-w-[25rem] overflow-hidden  rounded-2xl object-fill '
               />
             </div>
             <div className=' absolute top-0 -right-[4.5rem]'>
