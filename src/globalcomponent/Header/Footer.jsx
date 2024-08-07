@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Assets/logo.png';
+import logo from '../../Assets/logo.svg';
 import img1 from '../../Assets/image 43.png';
 import img2 from '../../Assets/image 44.png';
 import img3 from '../../Assets/image 45.png';
@@ -27,8 +27,7 @@ import { BsFillThreadsFill, BsInstagram } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
-    <footer class=' w-full pr-2 pl-2 lg:pb-10 relative mt-[8rem]'>
-      {/* <img src={HeaderSvg} alt='logo' className='w-full absolute bottom-0' /> */}
+    <footer class='bg-footer-gradient bg-cover bg-no-repeat  w-full pl-2 lg:pb-10 relative mt-[8rem]'>
       <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center pr-2'>
         <div
           style={{

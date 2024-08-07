@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import { FaUserPlus } from 'react-icons/fa';
-import logo from '../../Assets/logo.png';
+import logo from '../../Assets/logo.svg';
 import logo2 from '../../Assets/Frame 136.png';
 import HeaderSvg from '../../Assets/header-gradient.svg';
 import './Header.css';
@@ -10,12 +10,12 @@ import { RiMenuFill } from 'react-icons/ri';
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className='bg-transparent w-full min-h-[10rem] flex items-center justify-center relative'>
-      <img
+    <div className='bg-header-gradient bg-cover  bg-no-repeat  w-full min-h-[10rem] flex items-center justify-center relative'>
+      {/* <img
         src={HeaderSvg}
         alt='logo'
         className='cursor-pointer max-w-[100%] absolute top-0 object-cover'
-      />
+      /> */}
       <div
         style={{
           background: 'rgba(255, 255, 255, 0.2)',

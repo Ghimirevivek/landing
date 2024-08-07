@@ -12,18 +12,16 @@ import video1 from '../../Assets/Slider Animations/Creator/Creator Slide 1.mp4';
 import video2 from '../../Assets/Slider Animations/Creator/Creator Slide 2.mp4';
 import video3 from '../../Assets/Slider Animations/Creator/Creator Slide 3.mp4';
 import video4 from '../../Assets/Slider Animations/Creator/Creator Slide 4.mp4';
+import video5 from '../../Assets/Slider Animations/User/User Slider 2.mp4';
+import video6 from '../../Assets/Slider Animations/User/User Slider 3.mp4';
 import { Carousel } from '@material-tailwind/react';
 import gifimg from '../../Assets/creator1img1.gif';
-import carousel1 from '../../Assets/carousel1.png';
-import carousel2 from '../../Assets/carousel2.png';
-import carousel3 from '../../Assets/carousel3.png';
-import carousel4 from '../../Assets/carousel4.png';
-import carousel6 from '../../Assets/carousel5.png';
-import carousel7 from '../../Assets/carousel6.png';
+import righticon from '../../Assets/righticon.svg';
+import lefticon from '../../Assets/lefticon.svg';
 import gify from '../../Assets/gifybox.gif';
 import message from '../../Assets/Message.svg';
 import wishlist from '../../Assets/Wishlist 1.png';
-import butimg from '../../Assets/Button.png';
+import butimg from '../../Assets/_button-small.svg';
 import img1 from '../../Assets/Component 121.png';
 import gift from '../../Assets/gift.png';
 import coin from '../../Assets/coin.png';
@@ -36,6 +34,14 @@ import comment1 from '../../Assets/List.png';
 import comment2 from '../../Assets/List (1).png';
 import buttoniconwrap from '../../Assets/Badge Wrapper.png';
 import comment3 from '../../Assets/1.png';
+import livestream from '../../Assets/livestream.png';
+import favourite from '../../Assets/favorite.png';
+import ava from '../../Assets/ava.png';
+import amanda from '../../Assets/amanda.png';
+import jessica from '../../Assets/jessica.png';
+import onetap from '../../Assets/onetap.svg';
+import Sendtips from '../../Assets/Send tips 1.png';
+import livestrea from '../../Assets/livestreamhover.png';
 
 export function CarouselTransition1() {
   return (
@@ -51,7 +57,7 @@ export function CarouselTransition1() {
             color='gray'
             size='lg'
             onClick={handlePrev}
-            className='!absolute top-2/4 left-0'
+            className='!absolute top-2/4 left-4'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -75,7 +81,7 @@ export function CarouselTransition1() {
             color='gray'
             size='lg'
             onClick={handleNext}
-            className='!absolute top-2/4 right-0 '
+            className='!absolute top-2/4 right-4 '
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -264,7 +270,7 @@ export function CarouselTransition1() {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           style={{
             borderRadius: '15px',
             boxShadow:
@@ -323,95 +329,198 @@ export function CarouselTransition1() {
               </video>
             </div>
           </div>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );
 }
 export function CarouselTransition2() {
   return (
-    <Carousel
-      transition={{ duration: 1 }}
-      autoplay={true}
-      loop={true}
-      className='rounded-xl bg-no-repeat scrollbar-hide'
-      prevArrow={({ handlePrev }) => (
-        <IconButton
-          variant='text'
-          color='gray'
-          size='lg'
-          onClick={handlePrev}
-          className='!absolute top-2/4 left-4 -translate-y-2/4'
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={2}
-            stroke='currentColor'
-            className='h-6 w-6'
+    <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw] overflow-hidden'>
+      <Carousel
+        transition={{ duration: 1 }}
+        // autoplay={true}
+        loop={true}
+        className='rounded-xl max-w-[99%] scrollbar-hide'
+        prevArrow={({ handlePrev }) => (
+          <IconButton
+            variant='text'
+            color='gray'
+            size='lg'
+            onClick={handlePrev}
+            className='!absolute top-2/4 left-4'
           >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
-            />
-          </svg>
-        </IconButton>
-      )}
-      nextArrow={({ handleNext }) => (
-        <IconButton
-          variant='text'
-          color='gray'
-          size='lg'
-          onClick={handleNext}
-          className='!absolute top-2/4 !right-4 -translate-y-2/4'
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={2}
-            stroke='currentColor'
-            className='h-6 w-6'
+            <img src={lefticon} alt='icon' className='w-20 text-gray-400' />
+          </IconButton>
+        )}
+        nextArrow={({ handleNext }) => (
+          <IconButton
+            variant='text'
+            color='gray'
+            size='lg'
+            onClick={handleNext}
+            className='!absolute top-2/4 right-4 '
           >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
-            />
-          </svg>
-        </IconButton>
-      )}
-    >
-      <div
-        style={{
-          borderRadius: '15px',
-          // boxShadow:
-          //   'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
-          // border: '2px solid rgba(233,233,232,0.1)',
-        }}
-        className='relative w-full '
+            <img src={righticon} alt='icon' className='w-20 text-gray-400' />
+          </IconButton>
+        )}
       >
-        <img
-          src={carousel1}
-          alt='logo'
-          className='cursor-pointer  bg-no-repeat object-cover w-full'
-        />
-      </div>
-      <img
-        src={carousel6}
-        alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full'
-      />
-      <img
-        src={carousel7}
-        alt='logo'
-        className='cursor-pointer  bg-no-repeat object-cover w-full'
-      />
-    </Carousel>
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-start'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
+          />
+          <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
+            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+              <div className='text-left '>
+                {' '}
+                <span style={{ fontWeight: '700' }} className=' text '>
+                  Sign Up{' '}
+                </span>
+              </div>
+              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+                Begin your journey by creating an account on CreatorsHub. Join
+                our community effortlessly and start exploring a world of
+                creativity and support.
+              </p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=''>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className='w-full sm:w-[90%] lg:w-full overflow-hidden shadow-none'
+                >
+                  <source
+                    src={video1}
+                    type='video/mp4'
+                    className='bg-transparent border-none'
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-start'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
+          />
+          <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
+            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+              <div className='text-left '>
+                {' '}
+                <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                  Browse Your
+                </span>
+                <span style={{ fontWeight: '700' }} className=' text ml-2'>
+                  Favorite Creators
+                </span>
+              </div>
+              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+                Discover a diverse range of creators—from gamers to chefs,
+                vloggers to influencers. Explore their profiles, content, and
+                updates to find those who resonate with you.
+              </p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=''>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className='w-full sm:w-[90%] lg:w-full overflow-hidden shadow-none'
+                >
+                  <source
+                    src={video5}
+                    type='video/mp4'
+                    className='bg-transparent border-none'
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            borderRadius: '15px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.1)',
+          }}
+          className='relative max-w-full h-[40rem] flex items-center justify-start'
+        >
+          <img
+            src={gradient}
+            alt='logo'
+            className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
+          />
+          <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
+            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+              <div className='text-left '>
+                {' '}
+                <span style={{ fontWeight: '700' }} className='text-[#000]'>
+                  Send
+                </span>
+                <span style={{ fontWeight: '700' }} className=' text ml-2'>
+                  Gifts & Contributions
+                </span>
+              </div>
+              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+                Support your favorite creators by sending gifts and
+                contributions directly. Whether it's a cash tip, a product from
+                their wishlist, or backing their crowdfunding goals, you can
+                engage and show appreciation easily.
+              </p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=''>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className='w-full sm:w-[90%] lg:w-full overflow-hidden shadow-none'
+                >
+                  <source
+                    src={video6}
+                    type='video/mp4'
+                    className='bg-transparent border-none'
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Carousel>
+    </div>
   );
 }
 const CreatorContent = () => (
@@ -676,6 +785,214 @@ const UserContent = () => (
       personalized experience tailored to user preferences.
     </p>
     <CarouselTransition2 />
+    <div className='flex flex-col gap-8 w-full mt-10 '>
+      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+        {' '}
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
+          <img
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
+          />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='italic font-normal'>Live</span>
+            <span className='font-bold mx-2  '>Streaming</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Connect with creators in real-time with live chat and interactive
+            features on CreatorsHub. Send tips, crowdfund, and share wishlist
+            items directly.
+          </p>
+          <div className='xl:min-h-[226px] mt-2 relative group'>
+            <img
+              src={livestream}
+              alt='cardimage'
+              className='w-full h-[11.5rem] xl:h-[12.5rem] 3xl:h-[13rem] 4xl:h-[15rem] rounded-2xl object-fill'
+            />
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className=' flex items-center justify-center w-[100%] xl:w-[100%] absolute opacity-0 bottom-0 md:-bottom-10 lg:-bottom-8 xl:bottom-4 4xl:bottom-0  group-hover:opacity-100 transition ease-in delay-50 duration-500'>
+              <img
+                src={livestrea}
+                alt=''
+                className='w-[40%] sm:w-[48%] md:w-[55%] lg:w-[60%] xl:w-[40%]  2xl:w-[45%] 3xl:w-[50%] rounded-lg group-hover:scale-[2] origin-bottom transition ease-in delay-50 duration-500'
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
+          <img
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
+          />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='italic font-normal'>Effortless</span>
+            <span className='font-bold mx-2 text '> One-Tap</span>
+            <span className='font-bold mx-2  '>Payment Magic</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Enjoy seamless one-tap payments on CreatorsHub. Support creators
+            instantly with tips and crowdfunding contributions, hassle-free.
+          </p>
+          <div className='max-w-[14rem] sm:max-w-[20rem] md:sm:max-w-full xl:max-w-[60%] 2xl:max-w-[100%] xl:min-h-[150px] 3xl:min-h-[190px] mt-2 relative group'>
+            <img
+              src={Sendtips}
+              alt='cardimage'
+              className='w-full h-[11.5rem]  3xl:h-[12.2rem] 4xl:h-[15rem] rounded-2xl object-fill group-hover:scale-90 group-hover:-translate-x-[4rem] sm:group-hover:-translate-x-[7rem] transition ease-in delay-50 duration-500'
+            />
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 group-hover:scale-90 group-hover:-translate-x-[4rem] sm:group-hover:-translate-x-[7rem] transition ease-in delay-50 duration-500 rounded-2xl'></div>
+            <div className=' flex items-center justify-center w-[100%] xl:w-[100%] absolute opacity-0 top-14 left-40 group-hover:opacity-100 transition ease-in delay-50 duration-500'>
+              <img
+                src={onetap}
+                alt=''
+                className='absolute left-8 sm:left-20 4xl:left-[7rem] 4xl:sm:top-1 top-0 sm:-top-2  w-[40%] sm:w-[48%] md:w-[55%] lg:w-[60%] xl:w-[40%]  2xl:w-[45%] 3xl:w-[50%] rounded-lg group-hover:scale-[2.1] origin-right transition ease-in delay-50 duration-500'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+        {' '}
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
+          <img
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
+          />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='italic font-normal'>Explore your</span>
+            <span className='font-bold mx-2'>favorite</span>
+            <span className='font-bold mx-2 text'>creators</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[16px] 2xl:text-[18px] 3xl:text-[20px] inter'>
+            Discover and follow your favorite creators for the content you love.
+            Stay updated with their posts, streams, and engage directly to
+            support them. Join their community with a simple click.
+          </p>
+          <div className='relative top-0'>
+            <div className='xl:min-h-[200px] relative bottom-0 group '>
+              <img
+                src={favourite}
+                alt='cardimage'
+                className='w-[100%] max-w-[100%] rounded-2xl object-cover group-hover:opacity-0 opacity-100 transition ease-in delay-50 duration-500'
+              />
+
+              <div className=' flex items-center justify-center w-[100%] xl:w-[100%] absolute opacity-0 bottom-0  group-hover:opacity-100 transition ease-in delay-50 duration-500'>
+                <img
+                  src={amanda}
+                  alt=''
+                  className='w-[30%] absolute bottom-0 right-4 sm:-right-10 sm:w-[48%] md:w-[55%] lg:w-[60%] xl:w-[40%]  2xl:w-[45%] 3xl:w-[50%] rounded-lg group-hover:scale-[1.3] origin-bottom transition ease-in delay-50 duration-500'
+                />
+                <img
+                  src={jessica}
+                  alt=''
+                  className='w-[30%] z-10 sm:w-[48%] md:w-[55%] lg:w-[60%] xl:w-[40%]  2xl:w-[45%] 3xl:w-[50%] rounded-lg group-hover:scale-[1.3] origin-bottom transition ease-in delay-50 duration-500'
+                />
+                <img
+                  src={ava}
+                  alt=''
+                  className='w-[30%] absolute bottom-0 left-4 sm:-left-10  z-0 sm:w-[48%] md:w-[55%] lg:w-[60%] xl:w-[40%]  2xl:w-[45%] 3xl:w-[50%] rounded-lg group-hover:scale-[1.3] origin-bottom transition ease-in delay-50 duration-500'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '20px',
+            boxShadow:
+              'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            border: '2px solid rgba(233,233,232,0.3)',
+          }}
+          className=' md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+        >
+          <img
+            src={gradient}
+            alt='gradient'
+            className='absolute bottom-0 object-cover overflow-hidden rounded-2xl opacity-0 group-hover:opacity-100 transition ease-in delay-50 duration-300'
+          />
+          <div className='text-[22px] xl:text-[26px] 3xl:text-[32px] leading-relaxed text-black ubuntu'>
+            <span className='font-bold mx-2  '>Pay</span>
+            <span className='italic font-normal'>Per View</span>
+          </div>
+          <p className=' max-w-[40rem] xl:text-[18px] 3xl:text-[20px] inter'>
+            Monetize your best work with exclusive pay-per-video and premium
+            content options. Engage your audience with unique features and
+            insights, enhancing viewer satisfaction.
+          </p>
+          <div className='xl:min-h-[226px] mt-2 relative group '>
+            <div className='overflow-hidden w-full h-full relative origin-bottom transition ease-in delay-50 duration-500'>
+              {' '}
+              <div className='flex items-end justify-center'>
+                <img
+                  src={video}
+                  alt='cardimage'
+                  className='w-full max-w-[14rem] group-hover:translate-x-[7rem] relative top-6  rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                />
+                <img
+                  src={video}
+                  alt='cardimage'
+                  className='w-full max-w-[16rem] group-hover:scale-[1.02] group-hover:scale-y-[1.03] relative top-7 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                />
+                <img
+                  src={video}
+                  alt='cardimage'
+                  className='w-full max-w-[14rem] group-hover:-translate-x-[7rem] relative top-6 -z-10 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                />
+              </div>
+            </div>
+
+            <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
+
+            <div className='flex flex-col items-center w-[70%] xl:w-full absolute opacity-0  bottom-0 left-0  group-hover:opacity-100 group-hover:-translate-y-4 transition ease-in delay-50 duration-500'>
+              <img
+                src={comment3}
+                alt=''
+                className='w-full max-w-[30rem] z-10'
+              />
+
+              {/* <img src={buttoniconwrap} alt='' className='' /> */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

@@ -6,21 +6,22 @@ import {
   CardBody,
   Typography,
 } from '@material-tailwind/react';
-import img1 from '../../Assets/Frame 249.png';
+import img1 from '../../Assets/image 39.svg';
 import imggif from '../../Assets/imagegif.gif';
-import twitch from '../../Assets/twitch2.png';
-import youtube from '../../Assets/youtube.png';
-import insta from '../../Assets/insta.png';
-import twitter from '../../Assets/twitter.png';
-import twitter2 from '../../Assets/logos/twitter.png';
-import ytgaming from '../../Assets/ytgaming.png';
-import ytgaming2 from '../../Assets/logos/ytgaming.png';
-import snapchat from '../../Assets/snapchat.png';
-import snapchat2 from '../../Assets/logos/snapchat.png';
-import facebook from '../../Assets/facebook.png';
-import tiktok from '../../Assets/tiktok.png';
-import tiktok2 from '../../Assets/logos/tiktok.png';
+import twitch from '../../Assets/twitch2.svg';
+import youtube from '../../Assets/youtube.svg';
+import insta from '../../Assets/insta.svg';
+import twitter from '../../Assets/twitter.svg';
+import twitter2 from '../../Assets/logos/twitter.svg';
+import ytgaming2 from '../../Assets/ytgaming.svg';
+import ytgaming from '../../Assets/logos/ytgaming.svg';
+import snapchat from '../../Assets/snapchat.svg';
+import snapchat2 from '../../Assets/logos/snapchat.svg';
+import facebook from '../../Assets/facebook.svg';
+import tiktok from '../../Assets/tiktok.svg';
+import tiktok2 from '../../Assets/logos/tiktok.svg';
 import BoxComponent from './BoxComponent';
+
 export function CardDefault() {
   return (
     <Card

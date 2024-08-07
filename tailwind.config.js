@@ -10,7 +10,8 @@ module.exports = withMT({
       backgroundImage: {
         'custom-gradient':
           'radial-gradient(ellipse at left, #FAC9D6, transparent), radial-gradient(ellipse at right, #C8C5F4, transparent)',
-        'header-gradient': "url('/src/Assets/header-gradient.png')",
+        'header-gradient': "url('/src/Assets/header-gradient.svg')",
+        'footer-gradient': "url('/src/Assets/header-gradient2.svg')",
       },
       screens: {
         md: '787px',
