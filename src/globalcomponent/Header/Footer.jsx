@@ -27,7 +27,7 @@ import { BsFillThreadsFill, BsInstagram } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
-    <footer class='bg-footer-gradient bg-cover bg-no-repeat  w-full pl-2 lg:pb-10 relative mt-[8rem]'>
+    <footer class='bg-footer-gradient bg-cover bg-bottom bg-no-repeat  w-full h-full pl-2 lg:pb-10 relative mt-[8rem] pt-4'>
       <div class='w-full flex flex-col lg:flex-row lg:items-start items-center justify-center pr-2'>
         <div
           style={{
@@ -74,22 +74,22 @@ const Footer = () => {
                       Quick Links
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold '>
+                  <li class='mb-3  font-semibold '>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Home
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold '>
+                  <li class='mb-3  font-semibold '>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       About Us
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Login
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       How It Works
                     </a>
@@ -104,22 +104,22 @@ const Footer = () => {
                       Help
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       FAQ & Help
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Contact
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Blog
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Support
                     </a>
@@ -134,22 +134,22 @@ const Footer = () => {
                       Legal
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Terms of Service
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Privacy Policy
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Data Security
                     </a>
                   </li>
-                  <li class='mb-6  font-semibold'>
+                  <li class='mb-3  font-semibold'>
                     <a href='/' class='text-[#606E80] hover:text-[#000]'>
                       Careers
                     </a>

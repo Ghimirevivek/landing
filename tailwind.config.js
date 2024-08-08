@@ -12,6 +12,7 @@ module.exports = withMT({
           'radial-gradient(ellipse at left, #FAC9D6, transparent), radial-gradient(ellipse at right, #C8C5F4, transparent)',
         'header-gradient': "url('/src/Assets/header-gradient.svg')",
         'footer-gradient': "url('/src/Assets/header-gradient2.svg')",
+        'footer-gradient2': "url('/src/Assets/footergradient.png')",
       },
       screens: {
         md: '787px',

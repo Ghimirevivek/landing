@@ -535,7 +535,7 @@ const CreatorContent = () => (
     </p>
     <CarouselTransition1 />
     <div className='flex flex-col gap-8 w-full mt-10 '>
-      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between 3xl:justify-around w-full flex-wrap xl:flex-nowrap'>
         {' '}
         <div
           style={{
@@ -637,7 +637,7 @@ const CreatorContent = () => (
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between 3xl:justify-around w-full flex-wrap xl:flex-nowrap'>
         {' '}
         <div
           style={{

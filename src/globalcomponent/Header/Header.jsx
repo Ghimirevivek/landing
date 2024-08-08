@@ -28,7 +28,7 @@ const Header = () => {
         }}
         className='py-3 px-4 w-[99%] sm:w-[95%] rounded-lg flex items-center justify-between relative'
       >
-        <div className='flex items-center justify-between w-[90%] lg:w-[65%] xl:w-[60%] transition-all ease-in delay-100 duration-300'>
+        <div className='flex items-center justify-between w-[90%] lg:w-[65%] xl:w-[60%] 2xl:w-[55%] 3xl:w-[52%] transition-all ease-in delay-100 duration-300'>
           {' '}
           <div className='-mr-12 lg:-mr-8'>
             {' '}
@@ -40,7 +40,7 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
+          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6  2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
             <span>Home</span>
           </div>
           <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
@@ -114,7 +114,7 @@ const Header = () => {
           }`}
         >
           {toggleMenu && (
-            <div>
+            <div className='w-[80%]'>
               {' '}
               <div className='flex flex-col items-start gap-1'>
                 <div className='font-semibold text-[#000000] text-[17px] xl:text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 xl:px-2 px-3 lg:px-1.5 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
