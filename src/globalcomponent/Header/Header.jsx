@@ -107,16 +107,14 @@ const Header = () => {
             // WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.3)',
           }}
-          className={`flex lg:hidden items-center justify-between min-w-fit top-20 left-0 z-10 absolute transition-all ease-in delay-100 duration-300 opacity-0 h-0 ${
-            toggleMenu
-              ? 'h-auto opacity-100 py-3 px-4 w-[90%] sm:w-full'
-              : 'h-0 opacity-0 '
+          className={`flex lg:hidden items-center justify-between w-[80%] top-20 left-0 z-10 absolute transition-all ease-in delay-100 duration-300 opacity-0 h-0 ${
+            toggleMenu ? 'h-auto opacity-100 py-3 px-4' : 'h-0 opacity-0 '
           }`}
         >
           {toggleMenu && (
-            <div className='w-[80%]'>
+            <div className=''>
               {' '}
-              <div className='flex flex-col items-start gap-1'>
+              <div className=' flex flex-col items-start gap-1'>
                 <div className='font-semibold text-[#000000] text-[17px] xl:text-[18px] text-center flex items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 xl:px-2 px-3 lg:px-1.5 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
                   <span>Home</span>
                 </div>
