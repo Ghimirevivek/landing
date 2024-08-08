@@ -28,9 +28,9 @@ const Header = () => {
         }}
         className='py-3 px-4 w-[99%] sm:w-[95%] rounded-lg flex items-center justify-between relative'
       >
-        <div className='flex items-center justify-between w-[90%] lg:w-[65%] xl:w-[60%] 2xl:w-[55%] 3xl:w-[52%] transition-all ease-in delay-100 duration-300'>
+        <div className='flex items-center justify-start gap-0 w-[100%]  transition-all ease-in delay-100 duration-300'>
           {' '}
-          <div className='-mr-12 lg:-mr-8'>
+          <div className='-mr-8 lg:-mr-6'>
             {' '}
             <a href='/'>
               <img
@@ -56,11 +56,11 @@ const Header = () => {
             <span>FAQ</span>
           </div>
         </div>
-        <div className='hidden lg:flex items-center justify-center gap-1 xl:gap-4'>
+        <div className='hidden lg:flex items-center justify-center gap-1 xl:gap-4 relative -left-4'>
           <div className='cursor-pointer text-xl text-white text-[14px] flex items-center justify-center relative'>
             <input
               type='text'
-              className='border border-gray-300 bg-[#FEF5F0] rounded-full max-w-[4rem] xl:max-w-[6.3rem] 2xl:max-w-[13rem] placeholder:text-[16px] placeholder:mr-4 2xl:placeholder:mr-0 placeholder:text-gray-600 placeholder:relative placeholder:-top-[2px] px-4 py-[5px] outline-none text-gray-600 flex items-center justify-center'
+              className='border border-gray-300 bg-[#FEF5F0] inter rounded-full max-w-[4rem] xl:max-w-[6.3rem] 2xl:max-w-[13rem] placeholder:text-[16px] placeholder:mr-4 2xl:placeholder:mr-0 placeholder:text-gray-600 placeholder:relative placeholder:-top-[2px] px-4 py-[5px] outline-none text-gray-600 flex items-center justify-center'
               placeholder='Search Creator'
             />
             <CiSearch

@@ -1018,7 +1018,7 @@ const TabsElement = () => {
   const getResponsiveStyles = () => {
     const width = window.innerWidth;
     let minWidth = '25rem'; // Default minWidth
-    let minHeight = '3.3rem';
+    let minHeight = '3rem';
     if (width <= 640) {
       minWidth = '16rem';
       minHeight = '2.3rem';
@@ -1030,7 +1030,7 @@ const TabsElement = () => {
       minHeight = '3rem';
     } else if (width >= 1280) {
       minWidth = '25rem';
-      minHeight = '3.3rem';
+      minHeight = '3rem';
     }
 
     return {
@@ -1045,9 +1045,10 @@ const TabsElement = () => {
       backdropFilter: 'blur(5px)',
       WebkitBackdropFilter: 'blur(5px)',
       border: '2px solid rgba(233,233,232,0.3)',
-      padding: '0 1rem',
+      padding: '5px 1rem',
       cursor: 'pointer',
       transition: 'background-color 0.3s ease',
+
       minWidth,
       minHeight,
     };
@@ -1083,7 +1084,7 @@ const TabsElement = () => {
         <TabsHeader
           style={styles}
           indicatorProps={{
-            className: 'bg-transparent shadow-none rounded-full ',
+            className: 'bg-transparent shadow-none rounded-full',
           }}
           className='min-h-[0.3rem] min-w-[20rem]'
         >
