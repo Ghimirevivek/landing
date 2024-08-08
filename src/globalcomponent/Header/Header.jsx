@@ -40,19 +40,19 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className='hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
             <span>Home</span>
           </div>
-          <div className='hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
             <span>About Us</span>
           </div>
-          <div className='hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
             <span>How It Works</span>
           </div>
-          <div className='hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
             <span>Contact Us</span>
           </div>
-          <div className='hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300 cursor-default hover-shadow'>
+          <div className='cursor-pointer hidden md:flex font-semibold text-[#000000] md:text-[15px] lg:text-[16px] xl:text-[18px] text-center items-center justify-center hover:bg-[#FBFBFF] rounded-full 3xl:px-6 2xl:px-4 px-3 py-2 transition ease-in delay-100 duration-300  hover-shadow'>
             <span>FAQ</span>
           </div>
         </div>

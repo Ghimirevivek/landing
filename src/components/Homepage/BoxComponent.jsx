@@ -1,7 +1,7 @@
 import { Typography } from '@material-tailwind/react';
 import React, { useState } from 'react';
 
-const BoxComponent = ({ image1, image2, text }) => {
+const BoxComponent = ({ image1, image2, text, index }) => {
   const [hovering, setHovering] = useState(false);
 
   return (
@@ -17,7 +17,9 @@ const BoxComponent = ({ image1, image2, text }) => {
               }}
               onMouseEnter={() => setHovering(true)}
               onMouseLeave={() => setHovering(false)}
-              className='min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] hoverbox border group transition-all delay-50 duration-500 flex flex-col items-center justify-center'
+              className={`min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] hoverbox  group transition-all delay-50 duration-500 flex flex-col items-center justify-center ${
+                index % 3 === 0 ? ' border-0' : 'border-y'
+              }`}
             >
               <img
                 src={image1}
@@ -63,7 +65,9 @@ const BoxComponent = ({ image1, image2, text }) => {
               style={{
                 boxShadow: 'rgba(0, 0, 0, 0.06) 1px 1px 40px 0px inset',
               }}
-              className='min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] border flex flex-col items-center justify-center gap-2'
+              className={`${
+                index % 3 === 0 ? ' border-0' : 'border-y'
+              } min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px]  flex flex-col items-center justify-center gap-2`}
             >
               <img
                 src={image1}
@@ -92,7 +96,9 @@ const BoxComponent = ({ image1, image2, text }) => {
               // boxShadow: 'rgba(0, 0, 0, 0.10) 1px 1px 40px 0px inset',
             }
           }
-          className='min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px] border flex flex-col items-center justify-center gap-2'
+          className={`${
+            index % 3 === 0 ? ' border-0' : 'border-y'
+          } min-w-[80px] sm:min-w-[120px] h-[80px] sm:min-h-[120px] lg:min-h-[100px] xl:min-h-[120px] lg:min-w-[100px] xl:min-w-[120px]  flex flex-col items-center justify-center gap-2`}
         ></div>
       )}
     </div>
