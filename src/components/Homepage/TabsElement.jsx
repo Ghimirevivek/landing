@@ -734,31 +734,31 @@ const CreatorContent = () => (
             content options. Engage your audience with unique features and
             insights, enhancing viewer satisfaction.
           </p>
-          <div className='xl:min-h-[226px] mt-2 relative group '>
-            <div className='overflow-hidden w-full h-full relative origin-bottom transition ease-in delay-50 duration-500'>
+          <div className='xl:min-h-[140px] relative group bottom-0'>
+            <div className='overflow-hidden w-full h-full relative origin-bottom transition ease-in delay-50 duration-500 flex items-center justify-center'>
               {' '}
-              <div className='flex items-end justify-center'>
+              <div className='w-[80%] flex items-start justify-center'>
                 <img
                   src={video}
                   alt='cardimage'
-                  className='w-full max-w-[14rem] group-hover:translate-x-[7rem] relative top-6  rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                  className='w-full max-w-[10rem] md:max-w-[12rem] xl:max-w-[14rem] group-hover:translate-x-[7rem] relative top-10  left-10 3xl:left-0 rounded-2xl object-fill transition ease-in delay-50 duration-500'
                 />
                 <img
                   src={video}
                   alt='cardimage'
-                  className='w-full max-w-[16rem] group-hover:scale-[1.02] group-hover:scale-y-[1.03] relative top-7 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                  className='w-full max-w-[12rem] md:max-w-[14rem] xl:max-w-[16rem] group-hover:scale-[1.02] group-hover:scale-y-[1.03] relative top-6 rounded-2xl object-fill transition ease-in delay-50 duration-500'
                 />
                 <img
                   src={video}
                   alt='cardimage'
-                  className='w-full max-w-[14rem] group-hover:-translate-x-[7rem] relative top-6 -z-10 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                  className='w-full max-w-[10rem] md:max-w-[12rem] xl:max-w-[14rem] group-hover:-translate-x-[7rem] relative  right-10  top-10 3xl:right-0 -z-10 rounded-2xl object-fill transition ease-in delay-50 duration-500'
                 />
               </div>
             </div>
 
             <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
 
-            <div className='flex flex-col items-center w-[70%] xl:w-full absolute opacity-0  bottom-0 left-0  group-hover:opacity-100 group-hover:-translate-y-4 transition ease-in delay-50 duration-500'>
+            <div className='flex flex-col items-center w-full absolute opacity-0  bottom-0 left-0  group-hover:opacity-100 group-hover:-translate-y-4 transition ease-in delay-50 duration-500'>
               <img
                 src={comment3}
                 alt=''
@@ -885,7 +885,7 @@ const UserContent = () => (
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.3)',
           }}
-          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+          className='md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-between group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
         >
           <img
             src={gradient}
@@ -902,12 +902,12 @@ const UserContent = () => (
             Stay updated with their posts, streams, and engage directly to
             support them. Join their community with a simple click.
           </p>
-          <div className='relative top-0'>
-            <div className='xl:min-h-[200px] relative bottom-0 group '>
+          <div className='relative bottom-0 2xl:bottom-5 3xl:bottom-2.5 4xl:bottom-0'>
+            <div className='md:min-h-[200px]  xl:max-w-[330px] 2xl:max-w-[300px] 3xl:max-w-full relative bottom-0 xl:bottom-2 2xl:bottom-0 group '>
               <img
                 src={favourite}
                 alt='cardimage'
-                className='w-[100%] max-w-[100%] rounded-2xl object-cover group-hover:opacity-0 opacity-100 transition ease-in delay-50 duration-500'
+                className='relative 2xl:-bottom-4 3xl:bottom-0 w-[100%] max-w-[100%] rounded-2xl object-cover group-hover:opacity-0 opacity-100 transition ease-in delay-50 duration-500'
               />
 
               <div className=' flex items-center justify-center w-[100%] xl:w-[100%] absolute opacity-0 bottom-0  group-hover:opacity-100 transition ease-in delay-50 duration-500'>
@@ -956,31 +956,31 @@ const UserContent = () => (
             content options. Engage your audience with unique features and
             insights, enhancing viewer satisfaction.
           </p>
-          <div className='xl:min-h-[226px] mt-2 relative group '>
-            <div className='overflow-hidden w-full h-full relative origin-bottom transition ease-in delay-50 duration-500'>
+          <div className='xl:min-h-[140px] relative group bottom-0'>
+            <div className='overflow-hidden w-full h-full relative origin-bottom transition ease-in delay-50 duration-500 flex items-center justify-center'>
               {' '}
-              <div className='flex items-end justify-center'>
+              <div className='w-[80%] flex items-start justify-center'>
                 <img
                   src={video}
                   alt='cardimage'
-                  className='w-full max-w-[14rem] group-hover:translate-x-[7rem] relative top-6  rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                  className='w-full max-w-[10rem] md:max-w-[12rem] xl:max-w-[14rem] group-hover:translate-x-[7rem] relative top-10  left-10 3xl:left-0 rounded-2xl object-fill transition ease-in delay-50 duration-500'
                 />
                 <img
                   src={video}
                   alt='cardimage'
-                  className='w-full max-w-[16rem] group-hover:scale-[1.02] group-hover:scale-y-[1.03] relative top-7 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                  className='w-full max-w-[12rem] md:max-w-[14rem] xl:max-w-[16rem] group-hover:scale-[1.02] group-hover:scale-y-[1.03] relative top-6 rounded-2xl object-fill transition ease-in delay-50 duration-500'
                 />
                 <img
                   src={video}
                   alt='cardimage'
-                  className='w-full max-w-[14rem] group-hover:-translate-x-[7rem] relative top-6 -z-10 rounded-2xl object-fill transition ease-in delay-50 duration-500'
+                  className='w-full max-w-[10rem] md:max-w-[12rem] xl:max-w-[14rem] group-hover:-translate-x-[7rem] relative  right-10  top-10 3xl:right-0 -z-10 rounded-2xl object-fill transition ease-in delay-50 duration-500'
                 />
               </div>
             </div>
 
             <div className='absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition ease-in delay-50 duration-500 rounded-2xl'></div>
 
-            <div className='flex flex-col items-center w-[70%] xl:w-full absolute opacity-0  bottom-0 left-0  group-hover:opacity-100 group-hover:-translate-y-4 transition ease-in delay-50 duration-500'>
+            <div className='flex flex-col items-center w-full absolute opacity-0  bottom-0 left-0  group-hover:opacity-100 group-hover:-translate-y-4 transition ease-in delay-50 duration-500'>
               <img
                 src={comment3}
                 alt=''
