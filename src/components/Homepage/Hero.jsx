@@ -69,7 +69,7 @@ const Hero = () => {
         <img
           src={gifimg}
           alt=''
-          className='absolute max-w-[7rem] -bottom-6 right-4 rounded-full   '
+          className='absolute max-w-[6rem] -bottom-6 right-4 rounded-full   '
         />
       </div>
     </div>
