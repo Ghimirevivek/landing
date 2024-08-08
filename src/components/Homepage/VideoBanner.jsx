@@ -4,8 +4,14 @@ import minimalgif from '../../Assets/minimalgif.gif';
 import { FaUserPlus } from 'react-icons/fa';
 const VideoBanner = () => {
   return (
-    <div className='w-full flex flex-col items-center justify-center relative text-center'>
-      <img src={minimalgif} alt='circuit' className='w-[100%]' />
+    <div className='w-full flex flex-col items-center justify-center  text-center'>
+      <div className='relative'>
+        {' '}
+        <img src={minimalgif} alt='circuit' className='w-[100%] ' />
+        <div className='absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-white to-transparent pointer-events-none' />
+        <div className='absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent pointer-events-none' />
+      </div>
+
       {/* <video
         autoPlay
         loop
@@ -19,7 +25,7 @@ const VideoBanner = () => {
         />
         Your browser does not support the video tag.
       </video> */}
-      <div className='relative -top-[1rem] lg:-top-[4rem] xl:-top-[6rem] text-[30px] leading-tight max-w-[1000px]'>
+      <div className='relative top-[1rem] sm:-top-[1rem] lg:-top-[4rem] xl:-top-[6rem] text-[30px] leading-tight max-w-[1000px]'>
         <span className=' ml-2 text-[36px] sm:text-[46px] lg:text-[56px]'>
           {' '}
           <span style={{ fontWeight: '800' }} className=''>
