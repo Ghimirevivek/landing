@@ -50,7 +50,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <div className='text-[30px] leading-tight px-8'>
+          <div className='text-[26px] sm:text-[30px] leading-tight px-4 sm:px-8'>
             <span className='italic font-medium'>Creator</span>
             <span className='text ml-2 text-[30px]'>Appreciation</span>
             <br />

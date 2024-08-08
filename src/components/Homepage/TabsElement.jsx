@@ -48,8 +48,8 @@ export function CarouselTransition1() {
     <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw]'>
       <Carousel
         transition={{ duration: 1 }}
-        autoplay={true}
-        loop={true}
+        // autoplay={true}
+        // loop={true}
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className='absolute  -bottom-8 left-2/4 z-50 flex -translate-x-2/4 gap-2'>
             {new Array(length).fill('').map((_, i) => (
@@ -72,20 +72,7 @@ export function CarouselTransition1() {
             onClick={handlePrev}
             className='!absolute top-2/4 left-4'
           >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={2}
-              stroke='currentColor'
-              className='h-6 w-6'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
-              />
-            </svg>
+            <img src={lefticon} alt='icon' className='w-20 text-gray-400' />
           </IconButton>
         )}
         nextArrow={({ handleNext }) => (
@@ -96,20 +83,7 @@ export function CarouselTransition1() {
             onClick={handleNext}
             className='!absolute top-2/4 right-4 '
           >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={2}
-              stroke='currentColor'
-              className='h-6 w-6'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
-              />
-            </svg>
+            <img src={righticon} alt='icon' className='w-20 text-gray-400' />
           </IconButton>
         )}
       >
@@ -130,7 +104,7 @@ export function CarouselTransition1() {
             className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
           />
           <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
-            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+            <div className='text-[20px] sm:text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
               <div className='text-left '>
                 {' '}
                 <span style={{ fontWeight: '700' }} className=' text '>
@@ -140,7 +114,7 @@ export function CarouselTransition1() {
                   & Verify Your Profile
                 </span>
               </div>
-              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+              <p className='text-[#606E80] text-[13px] sm:text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
                 Begin your journey on CreatorsHub by signing up and verifying
                 you own your linked social accounts. Simply add your CreatorsHub
                 link to your platform’s bio, ensuring a secure and authentic
@@ -237,7 +211,7 @@ export function CarouselTransition1() {
             className='cursor-pointer absolute bottom-0 bg-no-repeat object-cover w-full  '
           />
           <div className='flex flex-col w-full h-full md:flex-row items-center justify-center md:justify-between px-12 py-6  2xl:px-20'>
-            <div className='text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
+            <div className='text-[20px] sm:text-[24px] md:text-[32px] 2xl:text-[40px] leading-tight flex flex-col items-start'>
               <div className='text-left '>
                 {' '}
                 <span style={{ fontWeight: '700' }} className='text-[#000]'>
@@ -247,7 +221,7 @@ export function CarouselTransition1() {
                   Wish List
                 </span>
               </div>
-              <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
+              <p className='text-[#606E80] text-[13px] sm:text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium max-w-[32rem] text-left inter leading-relaxed'>
                 Unlock endless possibilities with our diverse wishlist options:
                 <br />
                 <span className='text-black'>Small Cash Tips:</span> Receive
@@ -283,7 +257,7 @@ export function CarouselTransition1() {
             </div>
           </div>
         </div>
-        {/* <div
+        <div
           style={{
             borderRadius: '15px',
             boxShadow:
@@ -302,7 +276,7 @@ export function CarouselTransition1() {
           />
           <div className='w-full flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between md:gap:6 pl-10 2xl:px-20'>
             <div className='relative'>
-              <div className=' top-0 left-0 text-[20px] md:text-[25px] 2xl:text-[40px] w-[30rem]'>
+              <div className=' top-0 left-0 text-[20px] md:text-[25px] 2xl:text-[40px] '>
                 <div className='text-left '>
                   {' '}
                   <span style={{ fontWeight: '700' }} className='text-[#000]'>
@@ -316,7 +290,7 @@ export function CarouselTransition1() {
                     in Real-Time
                   </span>
                 </div>
-                <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium  text-left inter leading-relaxed'>
+                <p className='text-[#606E80] text-[14px] md:text-[16px] 2xl:text-[20px] mt-6 font-medium  text-left inter leading-relaxed pr-6'>
                   Begin your journey on CreatorsHub by signing up and verifying
                   you own your linked social accounts. Simply add your
                   CreatorsHub link to your platform’s bio, ensuring a secure and
@@ -331,7 +305,7 @@ export function CarouselTransition1() {
                 autoPlay
                 loop
                 muted
-                className='w-full sm:w-[90%] 2xl:w-full overflow-hidden shadow-none bg-transparent'
+                className='w-[90%] 2xl:w-full overflow-hidden shadow-none bg-transparent'
               >
                 <source
                   src={video4}
@@ -342,7 +316,7 @@ export function CarouselTransition1() {
               </video>
             </div>
           </div>
-        </div> */}
+        </div>
       </Carousel>
     </div>
   );
