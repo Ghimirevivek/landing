@@ -45,12 +45,25 @@ import livestrea from '../../Assets/livestreamhover.png';
 
 export function CarouselTransition1() {
   return (
-    <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw] overflow-hidden'>
+    <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw]'>
       <Carousel
         transition={{ duration: 1 }}
         autoplay={true}
         loop={true}
-        className='rounded-xl max-w-[99%] scrollbar-hide'
+        navigation={({ setActiveIndex, activeIndex, length }) => (
+          <div className='absolute  -bottom-8 left-2/4 z-50 flex -translate-x-2/4 gap-2'>
+            {new Array(length).fill('').map((_, i) => (
+              <span
+                key={i}
+                className={`block h-4 w-4 cursor-pointer border-[2px] border-gray-300 rounded-2xl transition-all content-[''] ${
+                  activeIndex === i ? 'bg-gray-100' : 'bg-white'
+                }`}
+                onClick={() => setActiveIndex(i)}
+              />
+            ))}
+          </div>
+        )}
+        className='rounded-xl max-w-[99%] scrollbar-hide relative overflow-visible'
         prevArrow={({ handlePrev }) => (
           <IconButton
             variant='text'
