@@ -7,7 +7,7 @@ import {
   Typography,
 } from '@material-tailwind/react';
 import img1 from '../../Assets/image 39.svg';
-import imggif from '../../Assets/imagegif.gif';
+import imggif from '../../Assets/stream.mp4';
 import twitch from '../../Assets/twitch2.svg';
 import youtube from '../../Assets/youtube.svg';
 import insta from '../../Assets/insta.svg';
@@ -65,11 +65,19 @@ export function CardDefault2() {
       className='relative right-[0rem] sm:right-[3rem] 2lg:right-[12rem]  mt-6 w-[80%] sm:w-[90%] md:w-full lg:w-[75%] 2lg:w-full xl:w-full max-w-[24rem] max-h-[15.62rem] sm:max-h-[19.62rem] -rotate-6  rounded-3xl glasseffect'
     >
       <CardHeader className='relative h-auto my-6'>
-        <img
+        {/* <img
           src={imggif}
           alt='cardimage'
           className='w-full h-[15rem] rounded-2xl'
-        />
+        /> */}
+        <video autoPlay loop muted className='w-full rounded-2xl'>
+          <source
+            src={imggif}
+            type='video/mp4'
+            className='bg-transparent border-none'
+          />
+          Your browser does not support the video tag.
+        </video>
       </CardHeader>
       <CardBody className='px-4 py-2 m-0 flex items-center justify-start gap-2 relative -top-2'>
         {' '}

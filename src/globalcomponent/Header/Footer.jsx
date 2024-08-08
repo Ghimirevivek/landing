@@ -59,9 +59,12 @@ const Footer = () => {
             </span>
           </div>
           <p className='text-[#606E80] text-[16px] mt-4 font-medium max-w-[28rem] px-8'>
-            Fans support their favorite creators by simply sending them gifts
-            from their personalized registry. All the while keeping both fans
-            and creators safe by keeping their personal information private.
+            Fans support their favorite creators by sending them gifts,
+            subscribing to their exclusive content or by tipping them for their
+            hard work. All the while keeping both fans and creators safe by
+            ensuring their personal information is kept private. We provide
+            creators with all the important tools to create, share and then
+            monetize their content.
           </p>
         </div>
         <div className=' w-full lg:w-[68%] lg:px-8 mb-10'>
