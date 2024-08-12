@@ -96,7 +96,7 @@ export function CarouselTransition1() {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-start'
+          className='relative max-w-full h-[40rem] flex items-center justify-start overflow-hidden'
         >
           <img
             src={gradient}
@@ -150,7 +150,7 @@ export function CarouselTransition1() {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-start'
+          className='relative max-w-full h-[40rem] flex items-center justify-start overflow-hidden'
         >
           <img
             src={gradient}
@@ -203,7 +203,7 @@ export function CarouselTransition1() {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-start'
+          className='relative max-w-full h-[40rem] flex items-center justify-start overflow-hidden'
         >
           <img
             src={gradient}
@@ -267,7 +267,7 @@ export function CarouselTransition1() {
             boxSizing: 'border-box',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-between'
+          className='relative max-w-full h-[40rem] flex items-center justify-between overflow-hidden'
         >
           <img
             src={gradient}
@@ -323,12 +323,25 @@ export function CarouselTransition1() {
 }
 export function CarouselTransition2() {
   return (
-    <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw] overflow-hidden'>
+    <div className='flex items-center justify-center max-w-[90vw] lg:max-w-[100vw] '>
       <Carousel
         transition={{ duration: 1 }}
         // autoplay={true}
+        navigation={({ setActiveIndex, activeIndex, length }) => (
+          <div className='absolute  -bottom-8 left-2/4 z-50 flex -translate-x-2/4 gap-2'>
+            {new Array(length).fill('').map((_, i) => (
+              <span
+                key={i}
+                className={`block h-4 w-4 cursor-pointer border-[2px] border-gray-300 rounded-2xl transition-all content-[''] ${
+                  activeIndex === i ? 'bg-gray-100' : 'bg-white'
+                }`}
+                onClick={() => setActiveIndex(i)}
+              />
+            ))}
+          </div>
+        )}
         loop={true}
-        className='rounded-xl max-w-[99%] scrollbar-hide'
+        className='rounded-xl max-w-[99%] scrollbar-hide relative overflow-visible'
         prevArrow={({ handlePrev }) => (
           <IconButton
             variant='text'
@@ -361,7 +374,7 @@ export function CarouselTransition2() {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-start'
+          className='relative max-w-full h-[40rem] flex items-center justify-start overflow-hidden'
         >
           <img
             src={gradient}
@@ -410,7 +423,7 @@ export function CarouselTransition2() {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-start'
+          className='relative max-w-full h-[40rem] flex items-center justify-start overflow-hidden'
         >
           <img
             src={gradient}
@@ -462,7 +475,7 @@ export function CarouselTransition2() {
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.1)',
           }}
-          className='relative max-w-full h-[40rem] flex items-center justify-start'
+          className='relative max-w-full h-[40rem] flex items-center justify-start overflow-hidden'
         >
           <img
             src={gradient}
