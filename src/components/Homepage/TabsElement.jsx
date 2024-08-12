@@ -56,7 +56,7 @@ export function CarouselTransition1() {
               <span
                 key={i}
                 className={`block h-4 w-4 cursor-pointer border-[2px] border-gray-300 rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? 'bg-gray-100' : 'bg-white'
+                  activeIndex === i ? 'bg-gray-300' : 'bg-white'
                 }`}
                 onClick={() => setActiveIndex(i)}
               />
@@ -333,7 +333,7 @@ export function CarouselTransition2() {
               <span
                 key={i}
                 className={`block h-4 w-4 cursor-pointer border-[2px] border-gray-300 rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? 'bg-gray-100' : 'bg-white'
+                  activeIndex === i ? 'bg-gray-300' : 'bg-white'
                 }`}
                 onClick={() => setActiveIndex(i)}
               />
