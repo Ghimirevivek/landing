@@ -2,6 +2,7 @@ import React from 'react';
 import mapVideo from '../../Assets/MinimalVideo.mp4';
 import minimalgif from '../../Assets/minimalgif.gif';
 import { FaUserPlus } from 'react-icons/fa';
+import { FiUserPlus } from 'react-icons/fi';
 const VideoBanner = () => {
   return (
     <div className='w-full flex flex-col items-center justify-center  text-center'>
@@ -44,7 +45,7 @@ const VideoBanner = () => {
             size='sm'
             className='font-semibold min-w-[8rem] bg-black text-white rounded-xl flex items-center justify-center gap-2 text-[15px] mybutton'
           >
-            <FaUserPlus /> Join Now
+            <FiUserPlus /> Join Now
           </button>
           <p className='text-[20px] inter text-[#606E80]'>
             It's Free<span>🎉</span>
