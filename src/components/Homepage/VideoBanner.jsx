@@ -8,8 +8,10 @@ const VideoBanner = () => {
       <div className='relative'>
         {' '}
         <img src={minimalgif} alt='circuit' className='w-[100%] ' />
-        <div className='absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-white to-transparent pointer-events-none' />
-        <div className='absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent pointer-events-none' />
+        <div className='absolute top-0 left-0 w-full h-16 sm:h-40 md:h-[15rem] xl:h-[20rem] bg-gradient-to-b from-white to-transparent pointer-events-none' />
+        <div className='absolute bottom-0 left-0 w-full h-16 sm:h-40 md:h-[15rem] xl:h-[20rem] bg-gradient-to-t from-white to-transparent pointer-events-none' />
+        <div className='absolute top-0 left-0 h-full w-16 sm:w-40 md:w-[15rem] xl:w-[20rem] bg-gradient-to-r from-white to-transparent pointer-events-none' />
+        <div className='absolute top-0 right-0 h-full w-16 sm:w-40 md:w-[15rem] xl:w-[20rem] bg-gradient-to-l from-white to-transparent pointer-events-none' />
       </div>
 
       {/* <video

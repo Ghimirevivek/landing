@@ -20,6 +20,7 @@ module.exports = withMT({
         '2xl': '1240px',
         '3xl': '1436px',
         '4xl': '1510px',
+        '5xl': '1610px',
       },
     },
   },

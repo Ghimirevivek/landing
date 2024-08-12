@@ -9,7 +9,7 @@ import VideoBanner from '../../components/Homepage/VideoBanner';
 
 const Homepage = () => {
   return (
-    <div className='max-w-[150rem] flex flex-col items-center justify-center mx-auto'>
+    <div className='max-w-[140rem] flex flex-col items-center justify-center mx-auto'>
       <div className='w-full'>
         <Header />
         <Hero />

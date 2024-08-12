@@ -50,7 +50,7 @@ export function CardDefault() {
             color='black'
             className='text-[14px] sm:text-[16px] lg:text-[15px] xl:text-[16px] font-semibold tracking-wide inter relative top-0'
           >
-            @VogueVoyager
+            @clair02
           </Typography>
         </div>
       </CardBody>
@@ -86,7 +86,7 @@ export function CardDefault2() {
           color='black'
           className='text-[14px] sm:text-[16px] lg:text-[15px] xl:text-[16px] font-semibold tracking-wide inter relative top-0'
         >
-          @NebulaNavigator
+          @matt0411
         </Typography>
       </CardBody>
     </Card>

@@ -60,7 +60,7 @@ const Hero = () => {
           loop
           autoPlay
           muted
-          className={`w-[92%] rounded-2xl mx-auto lg:mr-auto h-[400px] object-fill `}
+          className={`w-[92%] rounded-2xl mx-auto lg:mr-auto min-h-[400px] object-fill `}
         >
           <source src={video} type='video/mp4' />
           Your browser does not support the video tag.

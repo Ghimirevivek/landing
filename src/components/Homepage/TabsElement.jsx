@@ -522,7 +522,7 @@ const CreatorContent = () => (
     </p>
     <CarouselTransition1 />
     <div className='flex flex-col gap-8 w-full mt-10 '>
-      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between 3xl:justify-around w-full flex-wrap xl:flex-nowrap'>
+      <div className='flex items-center justify-center gap-4 xl:gap-10 w-full flex-wrap xl:flex-nowrap'>
         {' '}
         <div
           style={{
@@ -624,7 +624,7 @@ const CreatorContent = () => (
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between 3xl:justify-around w-full flex-wrap xl:flex-nowrap'>
+      <div className='flex items-center justify-center gap-4  xl:gap-10 w-full flex-wrap xl:flex-nowrap'>
         {' '}
         <div
           style={{
@@ -772,8 +772,8 @@ const UserContent = () => (
       personalized experience tailored to user preferences.
     </p>
     <CarouselTransition2 />
-    <div className='flex flex-col gap-8 w-full mt-10 '>
-      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+    <div className='flex flex-col items-center gap-8 w-full mt-10 '>
+      <div className='flex items-center justify-center gap-4 xl:gap-10 w-full flex-wrap xl:flex-nowrap'>
         {' '}
         <div
           style={{
@@ -860,7 +860,7 @@ const UserContent = () => (
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center gap-4 xl:gap-0 xl:justify-between w-full flex-wrap xl:flex-nowrap'>
+      <div className=' flex items-center justify-center gap-4 xl:gap-10  w-full flex-wrap xl:flex-nowrap'>
         {' '}
         <div
           style={{
@@ -927,7 +927,7 @@ const UserContent = () => (
             WebkitBackdropFilter: 'blur(5px)',
             border: '2px solid rgba(233,233,232,0.3)',
           }}
-          className='min-w-[340px] min-h-[350px] sm:min-w-[400px] sm:min-h-[400px] md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
+          className=' min-w-[340px] min-h-[350px] sm:min-w-[400px] sm:min-h-[400px] md:w-[730px] md:h-[420px] xl:w-[530px] 2xl:w-[580px] xl:h-[360px] 3xl:w-[670px] 3xl:h-[380px] 4xl:w-[730px] 4xl:h-[420px] flex flex-col items-center justify-center group relative px-2 py-4 pb-0 xl:p-4 xl:pb-0'
         >
           <img
             src={gradient}
