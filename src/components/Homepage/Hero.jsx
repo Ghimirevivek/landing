@@ -13,7 +13,7 @@ const Hero = () => {
         borderRadius: '15px',
         boxShadow:
           'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-
+        backdropFilter: 'blur(5px)',
         WebkitBackdropFilter: 'blur(5px)',
         border: '2px solid rgba(233,233,232,0.3)',
       }}
@@ -60,7 +60,7 @@ const Hero = () => {
           loop
           autoPlay
           muted
-          className={`w-[92%] rounded-2xl mx-auto lg:mr-auto min-h-[400px] object-fill `}
+          className={`w-[92%] rounded-2xl mx-auto lg:mr-auto md:min-h-[400px] object-fill `}
         >
           <source src={video} type='video/mp4' />
           Your browser does not support the video tag.
@@ -69,7 +69,7 @@ const Hero = () => {
         <img
           src={gifimg}
           alt=''
-          className='absolute max-w-[6rem] -bottom-6 right-4 rounded-full   '
+          className='absolute max-w-[4rem] sm:max-w-[5rem] md:max-w-[6rem] -bottom-6 right-2 md:right-4 rounded-full   '
         />
       </div>
     </div>

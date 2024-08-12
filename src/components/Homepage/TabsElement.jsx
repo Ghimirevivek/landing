@@ -70,7 +70,7 @@ export function CarouselTransition1() {
             color='gray'
             size='lg'
             onClick={handlePrev}
-            className='!absolute top-2/4 left-4'
+            className='hidden sm:block !absolute top-2/4 left-4'
           >
             <img src={lefticon} alt='icon' className='w-20 text-gray-400' />
           </IconButton>
@@ -81,7 +81,7 @@ export function CarouselTransition1() {
             color='gray'
             size='lg'
             onClick={handleNext}
-            className='!absolute top-2/4 right-4 '
+            className='hidden sm:block !absolute top-2/4 right-4 '
           >
             <img src={righticon} alt='icon' className='w-20 text-gray-400' />
           </IconButton>
@@ -348,7 +348,7 @@ export function CarouselTransition2() {
             color='gray'
             size='lg'
             onClick={handlePrev}
-            className='!absolute top-2/4 left-4'
+            className='hidden sm:block !absolute top-2/4 left-4'
           >
             <img src={lefticon} alt='icon' className='w-20 text-gray-400' />
           </IconButton>
@@ -359,7 +359,7 @@ export function CarouselTransition2() {
             color='gray'
             size='lg'
             onClick={handleNext}
-            className='!absolute top-2/4 right-4 '
+            className='hidden sm:block !absolute top-2/4 right-4 '
           >
             <img src={righticon} alt='icon' className='w-20 text-gray-400' />
           </IconButton>
