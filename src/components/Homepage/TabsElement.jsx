@@ -1028,11 +1028,11 @@ const TabsElement = () => {
       background: 'rgba(255, 255, 255, 0.2)',
       borderRadius: '50px',
       boxShadow:
-        'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
+        'rgba(17, 17, 26, 0.1) 0px 2px 10px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 10px 0px inset',
       backdropFilter: 'blur(5px)',
       WebkitBackdropFilter: 'blur(5px)',
       border: '2px solid rgba(233,233,232,0.3)',
-      padding: '5px 1rem',
+      padding: '7px 10px',
       cursor: 'pointer',
       transition: 'background-color 0.3s ease',
 
@@ -1053,7 +1053,7 @@ const TabsElement = () => {
 
   return (
     <div className='mt-10 lg:mt-0 flex flex-col items-center justify-center max-w-full'>
-      <div className='text-[30px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[55px] font-medium my-2'>
+      <div className='text-[30px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[55px] font-medium mt-2 mb-10'>
         Are You A <span className='text'>Creator</span>/ User?
       </div>
       <Tabs
@@ -1088,7 +1088,7 @@ const TabsElement = () => {
               value={value}
               // className={activeTab === value ? 'text-gray-900' : ''}
               className={`font-semibold text-[#000000] text-[18px] text-center flex items-center justify-center rounded-full px-6 py-2 transition-all ease-in delay-100 duration-300 cursor-pointer ${
-                activeTab === value ? 'my-shadow' : ''
+                activeTab === value ? 'custom-shadow' : ''
               } `}
               onClick={() => handleTabChange(value)}
             >
@@ -1115,6 +1115,12 @@ const TabsElement = () => {
           ))}
         </TabsBody>
       </Tabs>
+      <style jsx>{`
+        .custom-shadow {
+          box-shadow: rgba(17, 17, 26, 0.3) 0px -2px 6px 1px inset,
+            rgba(17, 17, 26, 0.05) 0px 0px 0px 0px;
+        }
+      `}</style>
     </div>
   );
 };
