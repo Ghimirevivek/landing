@@ -22,8 +22,8 @@ const Header = () => {
           borderRadius: '15px',
           boxShadow:
             'rgba(17, 17, 26, 0.1) 0px 2px 6px 0px inset, rgba(17, 17, 26, 0.1) 0px -2px 6px 0px inset',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
+          // backdropFilter: 'blur(5px)',
+          // WebkitBackdropFilter: 'blur(5px)',
           border: '2px solid rgba(233,233,232,0.3)',
         }}
         className='py-3 px-4 w-[99%] sm:w-[95%] rounded-lg flex items-center justify-between relative'
